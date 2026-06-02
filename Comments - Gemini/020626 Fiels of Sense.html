@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ontological Investigations</title>
+<title>fiels-of-sense – Ontological Investigations</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,23 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,8 +71,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -82,7 +111,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Ontological Investigations</span>
     </a>
   </div>
@@ -93,11 +122,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About this site</span></a>
   </li>  
 </ul>
@@ -116,81 +145,106 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#layered-ontology" id="toc-layered-ontology" class="nav-link active" data-scroll-target="#layered-ontology">Layered ontology</a></li>
-  <li><a href="#process-ontology" id="toc-process-ontology" class="nav-link" data-scroll-target="#process-ontology">Process ontology</a></li>
-  <li><a href="#dispositions-and-powers" id="toc-dispositions-and-powers" class="nav-link" data-scroll-target="#dispositions-and-powers">Dispositions and powers</a></li>
-  <li><a href="#probability-and-potentiality" id="toc-probability-and-potentiality" class="nav-link" data-scroll-target="#probability-and-potentiality">Probability and potentiality</a></li>
-  <li><a href="#quantum-physics" id="toc-quantum-physics" class="nav-link" data-scroll-target="#quantum-physics">Quantum Physics</a></li>
+  <li><a href="#the-mechanism-of-the-field-of-sense" id="toc-the-mechanism-of-the-field-of-sense" class="nav-link active" data-scroll-target="#the-mechanism-of-the-field-of-sense">1. The Mechanism of the Field of Sense</a></li>
+  <li><a href="#gabriels-world-vs.-your-world" id="toc-gabriels-world-vs.-your-world" class="nav-link" data-scroll-target="#gabriels-world-vs.-your-world">2. Gabriel’s “World” vs.&nbsp;Your “World”</a>
+  <ul class="collapse">
+  <li><a href="#why-the-world-is-not-an-object-works" id="toc-why-the-world-is-not-an-object-works" class="nav-link" data-scroll-target="#why-the-world-is-not-an-object-works">Why “The World is not an Object” works:</a></li>
+  </ul></li>
+  <li><a href="#logical-structure-of-the-modification" id="toc-logical-structure-of-the-modification" class="nav-link" data-scroll-target="#logical-structure-of-the-modification">3. Logical Structure of the Modification</a></li>
+  <li><a href="#application-to-hartmanns-strata" id="toc-application-to-hartmanns-strata" class="nav-link" data-scroll-target="#application-to-hartmanns-strata">4. Application to Hartmann’s Strata</a>
+  <ul class="collapse">
+  <li><a href="#final-assessment" id="toc-final-assessment" class="nav-link" data-scroll-target="#final-assessment">Final Assessment</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Ontological Investigations</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>These investigations will be organised in sections and chapters. The structure is that of an online book rather than as a blog.</p>
-<p><em>The assistance of Gemini is acknowledged for the illustrtations.</em></p>
-<section id="layered-ontology" class="level1">
-<h1>Layered ontology</h1>
-<p><img src="./images/layer_ontology.jpg" class="img-fluid"></p>
+<p>This is a sophisticated synthesis of <strong>Nicolai Hartmann’s</strong> stratified ontology and <strong>Markus Gabriel’s</strong> New Realism. By pivoting from Gabriel’s radical “The World does not Exist” to your refined “The World is not an Object,” you effectively resolve the nihilistic tension in Gabriel’s work while maintaining the structural utility of his <strong>Fields of Sense</strong>.</p>
+<p>Here is an assessment and breakdown of how this modification integrates into a critical ontological framework.</p>
+<hr>
+<section id="the-mechanism-of-the-field-of-sense" class="level2">
+<h2 class="anchored" data-anchor-id="the-mechanism-of-the-field-of-sense">1. The Mechanism of the Field of Sense</h2>
+<p>In your proposed structure, the Field of Sense acts as the “connective tissue” within Hartmann’s levels (Inorganic, Organic, Psychic, Spiritual). It provides a way to explain how entities within a specific stratum—or even across spheres (the Real vs.&nbsp;the Ideal)—interact without requiring a single, all-encompassing “container.”</p>
 <ul>
-<li><a href="./index_files/Why_critical_ontology.html">Why critical ontology?</a></li>
-<li><a href="./index_files/strata.html">Strata of being</a></li>
-<li><a href="./index_files/Fields of Sense.html">Objects in a Field of Sense</a></li>
+<li><strong>Relational Appearance:</strong> As you noted, an object like an ice cube only “makes sense” through its relations (heat transfer, physical support).</li>
+<li><strong>Recursive Nesting:</strong> Fields can be objects in higher fields (Room <span class="math inline">\(\rightarrow\)</span> House <span class="math inline">\(\rightarrow\)</span> Neighborhood), which mirrors Hartmann’s dependence/autonomy laws between strata.</li>
 </ul>
+<hr>
 </section>
-<section id="process-ontology" class="level1">
-<h1>Process ontology</h1>
-<p><img src="./images/process_ont.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./index_files/Taking Process Philosophy Seriously.html">Taking process philosophy seriously</a></li>
-</ul>
+<section id="gabriels-world-vs.-your-world" class="level2">
+<h2 class="anchored" data-anchor-id="gabriels-world-vs.-your-world">2. Gabriel’s “World” vs.&nbsp;Your “World”</h2>
+<p>The crux of your argument lies in the definition of <strong>existence</strong> vs.&nbsp;<strong>objecthood</strong>.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Gabriel’s View</th>
+<th>Your Proposed Modification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Existence</strong></td>
+<td>To exist is to appear in a Field of Sense.</td>
+<td>To exist is a broader category; appearance is a subset of existing.</td>
+</tr>
+<tr class="even">
+<td><strong>The World</strong></td>
+<td>The “Field of Sense of all Fields of Sense.”</td>
+<td>The “Systematic totality of all that exists.”</td>
+</tr>
+<tr class="odd">
+<td><strong>Conclusion</strong></td>
+<td>Because the World cannot appear in a field, <strong>it does not exist.</strong></td>
+<td>Because the World has no external relation, <strong>it is not an object.</strong></td>
+</tr>
+</tbody>
+</table>
+<section id="why-the-world-is-not-an-object-works" class="level3">
+<h3 class="anchored" data-anchor-id="why-the-world-is-not-an-object-works">Why “The World is not an Object” works:</h3>
+<ol type="1">
+<li><strong>Avoids Paradox:</strong> It sidesteps the linguistic trap where saying “The World does not exist” requires the World to “be” something in order to deny its existence.</li>
+<li><strong>Respects Totality:</strong> By defining the World as a non-object, you allow it to be the <em>totality</em> of all strata and spheres without forcing it to obey the rules of “appearance” that govern constituent objects.</li>
+<li><strong>Hartmann Compatibility:</strong> Hartmann’s ontology is “critical” precisely because it acknowledges the <em>Trans-objective</em>—realities that exist independently of our cognition or appearance. Your modification preserves the <strong>Ontic</strong> (the thing-in-itself) even if it never enters a Field of Sense.</li>
+</ol>
+<hr>
 </section>
-<section id="dispositions-and-powers" class="level1">
-<h1>Dispositions and powers</h1>
-<p><img src="./images/Power_Disp.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./index_files/The ontology of dispositions.html">The ontology of dispositions</a></li>
-</ul>
 </section>
-<section id="probability-and-potentiality" class="level1">
-<h1>Probability and potentiality</h1>
-<p><img src="./images/Prot_prob.png" class="img-fluid"></p>
-<ul>
-<li><a href="./index_files/Potentiality and probability.html">Potentiality and probability</a></li>
-<li><a href="./index_files/The-Kolmogorov-probability-axioms-and-objective-chance.html">The Kolmogorov probability axioms and objective chance</a></li>
-<li><a href="./index_files/Conditional-probability-Renyi-versus-Kolmogorov.html">Conditional probability: Renyi versus Kolmogorov</a></li>
-<li><a href="./index_files/The-ontology-of-dispositions.html">The ontology of dispositions</a></li>
-</ul>
+<section id="logical-structure-of-the-modification" class="level2">
+<h2 class="anchored" data-anchor-id="logical-structure-of-the-modification">3. Logical Structure of the Modification</h2>
+<p>Your revision of the syllogism provides a cleaner ontological boundary. By replacing Gabriel’s definition of existence with a definition of <strong>objecthood</strong>, you maintain the integrity of the “Field of Sense” as a tool for describing <em>manifestation</em> rather than <em>being</em>.</p>
+<blockquote class="blockquote">
+<p><strong>The Refined Syllogism:</strong> 1. To be an <strong>object</strong> is to appear in a Field of Sense (relational). 2. Appearance requires a relationship between at least two entities. 3. The <strong>World</strong> (as totality) cannot have an external relationship. 4. Therefore, the World cannot appear in a Field of Sense. 5. <strong>Conclusion:</strong> The World is not an object (but may still exist as the totality).</p>
+</blockquote>
+<hr>
 </section>
-<section id="quantum-physics" class="level1">
-<h1>Quantum Physics</h1>
-<p><img src="./images/QM.jpg" class="img-fluid"></p>
+<section id="application-to-hartmanns-strata" class="level2">
+<h2 class="anchored" data-anchor-id="application-to-hartmanns-strata">4. Application to Hartmann’s Strata</h2>
+<p>Using Fields of Sense within Hartmann’s framework allows for a “Local Realism.” For instance:</p>
 <ul>
-<li><a href="./index_files/A Relational Reconstruction of Quantum Mechanics.html">A Relational Reconstruction of Quantum Mechanics</a></li>
-<li><a href="./index_files/Comparison-of-quantum-physical-ontologies.html">Comparison of quantum physical ontologies</a></li>
-<li><a href="./index_files/Quantum-chance.html">Quantum chance</a></li>
+<li><strong>The Physical Stratum:</strong> A Field of Sense defined by gravitational and electromagnetic relations.</li>
+<li><strong>The Spiritual (Geist) Stratum:</strong> A Field of Sense defined by meanings, historical contexts, and values.</li>
 </ul>
+<p>By using <strong>Reference</strong> (as you cited via Frege) to differentiate these fields, you prevent “category errors”—such as trying to explain the “sense” of a fictional character using the “laws” of the inorganic stratum.</p>
+<hr>
+<section id="final-assessment" class="level3">
+<h3 class="anchored" data-anchor-id="final-assessment">Final Assessment</h3>
+<p>Your modification is a grounded, “common-sense” improvement on Gabriel. It keeps the <strong>epistemological clarity</strong> of New Realism (knowing where and how things appear) without inheriting its <strong>ontological austerity</strong> (denying the totality of the world).</p>
+<p>It essentially moves the World from a <em>failed set</em> to a <em>unique category of being</em> that transcends the subject-object relationship.</p>
+<p>How do you envision this “Non-Object World” interacting with Hartmann’s concept of the “Determining Tendency” between the lower and higher strata?</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
