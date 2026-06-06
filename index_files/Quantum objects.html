@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Robert Johnston">
+<meta name="dcterms.date" content="2026-06-03">
 
-<title>Strata of being – Ontological Investigations</title>
+<title>quantum-objects – Ontological Investigations</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -71,6 +73,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../custom.css">
 </head>
@@ -111,22 +142,50 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction-to-physical-ontology" id="toc-introduction-to-physical-ontology" class="nav-link active" data-scroll-target="#introduction-to-physical-ontology">Introduction to Physical Ontology</a></li>
+  <li><a href="#the-problem-of-contextuality" id="toc-the-problem-of-contextuality" class="nav-link" data-scroll-target="#the-problem-of-contextuality">The Problem of Contextuality</a></li>
+  <li><a href="#position-momentum-and-the-field-of-sense" id="toc-position-momentum-and-the-field-of-sense" class="nav-link" data-scroll-target="#position-momentum-and-the-field-of-sense">Position, Momentum, and the Field of Sense</a></li>
+  <li><a href="#mathematical-formulation-of-spin" id="toc-mathematical-formulation-of-spin" class="nav-link" data-scroll-target="#mathematical-formulation-of-spin">Mathematical Formulation of Spin</a>
+  <ul class="collapse">
+  <li><a href="#spin-operators-and-pauli-matrices" id="toc-spin-operators-and-pauli-matrices" class="nav-link" data-scroll-target="#spin-operators-and-pauli-matrices">Spin Operators and Pauli Matrices</a></li>
+  </ul></li>
+  <li><a href="#spin-eigenvalues-and-state-vectors" id="toc-spin-eigenvalues-and-state-vectors" class="nav-link" data-scroll-target="#spin-eigenvalues-and-state-vectors">Spin Eigenvalues and State Vectors</a></li>
+  <li><a href="#non-commutativity-and-interaction" id="toc-non-commutativity-and-interaction" class="nav-link" data-scroll-target="#non-commutativity-and-interaction">Non-Commutativity and Interaction</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Strata of being</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Robert Johnston </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 3, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -136,40 +195,66 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>To discuss ontology in general and to compare competing ontological proposals some structure is useful. This structure will help to place <em>candidate beings</em> in relation to others, understand their way of being and, for example, avoid the category mistake of identifying elements of physical reality with their mathematical representation. Here we will explore the proposal that reality is indeed stratified and secondly what that stratification may be. In <em>critical ontology</em> it will be important to distinguish whether these levels are levels of reality <em>per se</em> or levels in a description of reality.</p>
-<p>The starting point cannot just be comprehensive scepticism about whether anything exists or not. That will get us nowhere. We will start by taking the phenomena around us as the they appear. There appear to be things that take up space and are stable. There appear to be things that take space and grow. There are appear to be things that have some purpose and make choices. There appear to be things that are made up of other things. In addition, there are beings with emotional states and awareness of making choices. There is also awareness of resistance or pushback from other things. There is awareness of being the capacity of some beings to change the state of other things. We may be mistaken about particular things and their relationship to each other but the appearances are the appearances. In talking about things and beings, we have implicitly used categories such a space, time, choice, emotion, awareness and substance. The categories will play an important role is characterising the levels in which beings exist. There will be separate chapter on categories. Hartmann proposes a pluralistic view of reality, that covers all the things and beings listed above, that appear in four dynamically interrelated <a href="Why_critical_ontology.html">strata</a> [1]:</p>
+<section id="introduction-to-physical-ontology" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-physical-ontology">Introduction to Physical Ontology</h2>
+<p>Quantum mechanics is part of physics and experimentation is an activity in physics. Therefore, the entities of interest in physics must be observable to some extent. They must make an appearance. That is, entities of interest must be <strong>objects</strong>; they appear in at least one <a href="../index_files/Fields of Sense.html"><strong>field of sense</strong></a>.</p>
+<p>The ontological framework for the discussion will be that quantum objects are physical objects that have some properties that can appear in one of a collection of fields of sense. To move from ontology to physical theory, an explanatory structure is needed and, when possible, a mathematical formulation is adopted that describes the behavior of the quantum objects in a precise way.</p>
+</section>
+<section id="the-problem-of-contextuality" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem-of-contextuality">The Problem of Contextuality</h2>
+<p>There are puzzling and paradoxical effects of quantum mechanics, be they the thought experiments of Einstein, Podolsky and Rosen (EPR) or Wigner’s friend with Schrödinger’s cat, or even double-slit experiment. These effects to the need to re-examine what is meant by a <strong>physical property</strong> of an object.</p>
+<p>In quantum mechanics, it is known that all properties need a specific context in which to appear as quantified values. This is known to be the case in general from the work of <strong>Kochen and Specker [1]</strong>, but has been a common understanding among physicists based on insights obtained from experiments such as that of <strong>Stern and Gerlach [2]</strong>.</p>
+</section>
+<section id="position-momentum-and-the-field-of-sense" class="level2">
+<h2 class="anchored" data-anchor-id="position-momentum-and-the-field-of-sense">Position, Momentum, and the Field of Sense</h2>
+<p>Before moving on to spin, consider the <strong>Heisenberg Uncertainty Principle</strong>, which is usually taken to mean that an electron, for example, cannot have a precise value of its position and its momentum at the same time.</p>
+<blockquote class="blockquote">
+<p><strong>Question:</strong> Does this mean that it sometimes has position as a property and sometimes momentum but never both together?</p>
+</blockquote>
+<p>That understanding of the theory would mean that these properties are of the context rather than the object of the experiment. According to the ontology of objects and their properties being developed here, a particle (such as an electron) always has the properties of position and momentum, represented by an operator, but these properties take values by appearing in distinct <strong>Fields of Sense</strong>. This means that the context in which the particle position takes a value is different from that in which its momentum takes a value.</p>
+</section>
+<section id="mathematical-formulation-of-spin" class="level2">
+<h2 class="anchored" data-anchor-id="mathematical-formulation-of-spin">Mathematical Formulation of Spin</h2>
+<p>We now consider a particle with spin <span class="math inline">\(1/2\)</span> (an electron) situated and free to move in three dimensions. Following Faddeev and Yakubovskii [3], the electron combines its spin Hilbert space (<span class="math inline">\(\mathbb{C}^2\)</span>) with that associated with the electron’s movement in three dimensions (<span class="math inline">\(\mathbb{R}^3\)</span>).</p>
+<p>The Hilbert space <span class="math inline">\(\mathcal{H}\)</span> for the electron’s position and momentum is the space <span class="math inline">\(L^2(\mathbb{R}^3)\)</span> of square-integrable complex-valued functions. In mathematical notation, the state space with spin becomes the enlarged Hilbert space:</p>
+<p><span class="math display">\[\mathcal{H}_S = L^2(\mathbb{R}^3) \otimes \mathbb{C}^2\]</span></p>
+<p>This captures the intuition that the state function becomes a pair of complex-valued <span class="math inline">\(L^2(\mathbb{R}^3)\)</span> functions. For a pure state <span class="math inline">\(\Psi(x)\)</span> in <span class="math inline">\(\mathcal{H}\)</span>, there are two orthogonal states in <span class="math inline">\(\mathcal{H}_S\)</span>:</p>
+<p><span class="math display">\[\Psi_{\uparrow} = \begin{pmatrix} \Psi(x) \\ 0 \end{pmatrix} , \, \Psi_{\downarrow} = \begin{pmatrix} 0 \\ \Psi(x) \end{pmatrix}\]</span></p>
+<section id="spin-operators-and-pauli-matrices" class="level3">
+<h3 class="anchored" data-anchor-id="spin-operators-and-pauli-matrices">Spin Operators and Pauli Matrices</h3>
+<p>Focusing on the spin property <span class="math inline">\(\hat{S}\)</span>, a self-adjoint operator <span class="math inline">\(S\)</span> on <span class="math inline">\(\mathbb{C}^2\)</span> can be represented as the linear combination of the identity matrix <span class="math inline">\(I\)</span> and the <strong>Pauli matrices</strong>:</p>
+<p><span class="math display">\[I = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end{pmatrix}, \sigma_1 = \begin{pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{pmatrix}, \sigma_2 = \begin{pmatrix} 0 &amp; -i \\ i &amp; 0 \end{pmatrix}, \sigma_3 = \begin{pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{pmatrix}\]</span></p>
+<p>Quantum physics is brought into this mathematics by introducing the Planck constant <span class="math inline">\(\hbar\)</span> and defining the self-adjoint spin-<span class="math inline">\(1/2\)</span> operators as:</p>
+<p><span class="math display">\[S_j = \frac{\hbar}{2} \sigma_j, \quad j = 1, 2, 3 \qquad (1)\]</span></p>
+<p>These follow the angular momentum commutation relations:</p>
+<p><span class="math display">\[[S_1, S_2] = i\hbar S_3, \quad [S_2, S_3] = i\hbar S_1, \quad [S_3, S_1] = i\hbar S_2\]</span></p>
+</section>
+</section>
+<section id="spin-eigenvalues-and-state-vectors" class="level2">
+<h2 class="anchored" data-anchor-id="spin-eigenvalues-and-state-vectors">Spin Eigenvalues and State Vectors</h2>
+<p>The operators <span class="math inline">\(S_j\)</span> have eigenvalues <span class="math inline">\(\pm \hbar/2\)</span>, which are the admissible values of the projections of the spin on some direction. The vectors</p>
+<p><span class="math display">\[\Psi_{\uparrow} = \begin{pmatrix} \Psi(x) \\ 0 \end{pmatrix} \quad \text{and} \quad \Psi_{\downarrow} = \begin{pmatrix} 0 \\ \Psi(x) \end{pmatrix}\]</span></p>
+<p>are eigenvectors of the operator <span class="math inline">\(S_3\)</span> with eigenvalues <span class="math inline">\(+\hbar/2\)</span> and <span class="math inline">\(-\hbar/2\)</span>.</p>
+<p>The eigenvectors of <span class="math inline">\(S_1\)</span> and <span class="math inline">\(S_2\)</span> are linear combinations of <span class="math inline">\(\Psi_{\uparrow}\)</span> and <span class="math inline">\(\Psi_{\downarrow}\)</span>. Therefore, these vectors describe states with a definite value of the third projection of the spin. Similar constructions can be made for the other spin components.</p>
+</section>
+<section id="non-commutativity-and-interaction" class="level2">
+<h2 class="anchored" data-anchor-id="non-commutativity-and-interaction">Non-Commutativity and Interaction</h2>
+<p>As the components do not commute, they cannot simultaneously take precise values in all components. The spin will appear to interact with some other object, involving a magnetic interaction, to take a value of <span class="math inline">\(+\hbar/2\)</span> or <span class="math inline">\(-\hbar/2\)</span>. Independent of the direction defined by the interaction, the possible values the spin property can take are <span class="math inline">\(\pm \hbar/2\)</span>, with probabilities determined by the state of the electron. The probabilities of <span class="math inline">\(\pm \hbar/2\)</span> appearing sum to one.</p>
+<p>The property values appear when the appropriate <strong>Field of Sense</strong> is available. However, in relation to this point it should be noted that the isolated system has properties represented by Hermitian operators, such as the spin-<span class="math inline">\(1/2\)</span> <span class="math inline">\(S_j\)</span>, that have eigenvalues <span class="math inline">\(\pm \frac{1}{2}\hbar\)</span> even in the absence of any interaction term coupling it to another object.</p>
+<p>The spin values are quantitative characteristics of the spin property, but the values will only actually <strong>appear</strong> once the appropriate Field of Sense is available to provide a context for an interaction with another object.</p>
+<p>The spin will appear to interact with some other object (involving a magnetic interaction) to take a value. A <strong>Field of Sense</strong> affords a context for the appearance of properties of the quantum object. The values only actually appear once the appropriate Field of Sense is available to provide a context for an interaction with another object.</p>
+<hr>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
 <ol type="1">
-<li>Inorganic</li>
-<li>Organic</li>
-<li>Psychic</li>
-<li>Spiritual.</li>
+<li><strong>Kochen, S. and Specker, E. P.</strong> (1967). <em>The Problem of Hidden Variables in Quantum Mechanics</em>. J. Math. &amp; Mech. 17, p.&nbsp;59.</li>
+<li><strong>Gerlach, W. and Stern, O.</strong> (1922). <em>Der experimentelle Nachweis der Richtungsquantelung in Magnetfeld</em>. Zeitschrift für Physik, pp.&nbsp;349-352.</li>
+<li><strong>Faddeev, L. D. and Yakubovskii, O. A.</strong> (2000). <em>Lectures on Quantum Mechanics for Mathematics Students</em>. American Mathematical Society.</li>
 </ol>
-<p>The layers are presented in the order of decreasing ontological strength. That is, in each layer the beings depend on those in stronger layers to exist. However, the beings in the less strong layers cannot be reduced to beings in stronger layers. They have their specific categories of existence. There are also multi strata beings as will be illustrated at the end of this chapter. The question of whether these levels exist and the nature of their existence will not be examined here other than to recognise them as structural proposals and so will be seen to at least exist at the <em>spiritual level</em>.</p>
-<p>The name given to each level is not problematic except for the fourth. <em>Spiritual being</em> is a translation from the German <em>geistige Sein</em> and the use of the term Geist follows the tradition influenced by Hegel and Dilthey - as it is used, for example, in Geisteswissenschaft,and its meaning covers both individual mind as well as superindividual culture, which is why it lacks an adequate English translation. No religious sense of the term is intended here. Beings at the spiritual level cannot exist without the other levels.</p>
-<p>Although the listing of the four strata suggests a hierarchy, to provide this thought with some substance something needs to be said about the relationship between the strata. The levels of reality are characterised (and therefore distinguished) by their categories. With regard to the levels of reality, it is obvious that the categories in question are ontological rather than epistemological. There are categories that pertain to reality as whole - such as time, whole, part. At the inorganic level the categories of physics are different from those of chemistry. Some examples follow.</p>
-<ol type="1">
-<li><p>Inorganic stratum, with categories such as space, time, process, substance, is organised through causality.</p></li>
-<li><p>Organic stratum, with categories such as metabolism, assimilation, self-regulation, self-reproduction and adaptation, is organically organised - the details of the organising principles are unknown for the time being.</p></li>
-<li><p>The psychic stratum, with categories such as consciousness, pleasure, act and content, has its own psychic network of relations. Equally unknown is the inner essence of the form of determination of mental acts.</p></li>
-<li><p>Spirit includes categories of fear, hope, will, freedom, thought, personality, but also society, historicity, or intersubjectivity. It is organised as three modes of spirit;</p>
-<ul>
-<li><p>Personal - thought, freedom, conscious action and moral will</p></li>
-<li><p>Objective - superindividual but living as culture, collective or society</p></li>
-<li><p>Objectivated - superindividually existing but non-living. As in cultural artifacts and institutions.</p></li>
-</ul></li>
-</ol>
-<p>All categories at the inorganic level, such as space and time, recur at the organic level. This recurrence of categories is called <em>superinformation</em>. There is also autonomy off levels and this is known as <em>superposition</em> - building above. For example, <em>consciousness</em>, a category of the psyche, is not spatial.</p>
-<p>In addition there are the “fundamental” categories (common for all strata of real being) that come in pairs: principle–concretum; structure–modus; form–matter; inner–outer; determination–dependence; quality–quantity; unity–manifoldness; harmony–conflict; contrast–dimension; discretion–continuity; substratum–relation; element–structure.</p>
-<p>The above only provides a sketch. For more detail on the categories of real being see Cicovacki [1] who provides a bridge to the detailed work by Hartmann.</p>
-<p>The basic structure can be summarised in a diagram.</p>
-<p><img src="../images/Architecture.jpg" title="layers of being" class="img-fluid"></p>
-<p>Hartmann’s model of reality includes mind and spirit superposed on an ontologically stronger foundation of life and matter. There is, however, a feedback loop that is not explicit in the diagram. The objectivated spirit gives rise to artifacts, such as books and architecture, that are also actualised as things at the material level. For example, a person, James Joyce say, has some thoughts (personal spirit) about Dublin society (objective spirit) and creates a novel, Ulysses (objectivated spirit), that is published as book (still objectivated spirit) and printed in several editions (inorganic objects).</p>
-<p>The being James Joyce was made of inorganic matter organised as an inorganic life form with a mind and emotional life on which was superposed a spirit that could choose to work for years on intricate works of literature. He would also often choose to drink heavily after a day’s work. He loved his immediate family.</p>
-<p>A further example. This documetation of this investitgation exists as objectivated spirit. It came into being because of my choice and was enabled by the infrastructure supplied by the web. Making and maintaining the documentation are choices made by me at the level of my personal spirit. The physical document is dependent on organised matter (inorganic level) the organisation of it is objectivated spirit because it was designed. The document and its chapters are captured and encoded in the infrastructure. The chapters may be instantiated on the screen of a reader’s device. The readers use their sense organs and brain (organic level) to access the information that is processed through their psychic level and, hopefully, understood at the level of their personal spirit. The readers and I form a loose community that exists as objective spirit.</p>
-<p>Simple beings such as electrons may only inhabit the inorganic level but the existence of complex beings may be across many or all strata. This complex existence is a process rather than a hierarchy.</p>
-<p>[1] Cicovacki, Predrag, The Analysis of Wonder. Bloomsbury USA. 2014</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

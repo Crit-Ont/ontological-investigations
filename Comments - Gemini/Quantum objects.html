@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Strata of being – Ontological Investigations</title>
+<title>Quantum objects – Ontological Investigations</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../custom.css">
 </head>
@@ -111,15 +140,25 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#resolving-the-contextuality-paradox" id="toc-resolving-the-contextuality-paradox" class="nav-link active" data-scroll-target="#resolving-the-contextuality-paradox">1. Resolving the Contextuality Paradox</a></li>
+  <li><a href="#the-mathematical-marriage-l2mathbbr3-otimes-mathbbc2" id="toc-the-mathematical-marriage-l2mathbbr3-otimes-mathbbc2" class="nav-link" data-scroll-target="#the-mathematical-marriage-l2mathbbr3-otimes-mathbbc2">2. The Mathematical Marriage: <span class="math inline">\(L^2(\mathbb{R}^3) \otimes \mathbb{C}^2\)</span></a></li>
+  <li><a href="#spin-and-the-stern-gerlach-insight" id="toc-spin-and-the-stern-gerlach-insight" class="nav-link" data-scroll-target="#spin-and-the-stern-gerlach-insight">3. Spin and the Stern-Gerlach Insight</a></li>
+  <li><a href="#critical-refinement-the-appearance-vs.-existence" id="toc-critical-refinement-the-appearance-vs.-existence" class="nav-link" data-scroll-target="#critical-refinement-the-appearance-vs.-existence">4. Critical Refinement: The “Appearance” vs.&nbsp;“Existence”</a></li>
+  <li><a href="#summary-table-ontology-of-the-quantum-object" id="toc-summary-table-ontology-of-the-quantum-object" class="nav-link" data-scroll-target="#summary-table-ontology-of-the-quantum-object">Summary Table: Ontology of the Quantum Object</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Strata of being</h1>
+<h1 class="title">Quantum objects</h1>
 </div>
 
 
@@ -136,40 +175,78 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>To discuss ontology in general and to compare competing ontological proposals some structure is useful. This structure will help to place <em>candidate beings</em> in relation to others, understand their way of being and, for example, avoid the category mistake of identifying elements of physical reality with their mathematical representation. Here we will explore the proposal that reality is indeed stratified and secondly what that stratification may be. In <em>critical ontology</em> it will be important to distinguish whether these levels are levels of reality <em>per se</em> or levels in a description of reality.</p>
-<p>The starting point cannot just be comprehensive scepticism about whether anything exists or not. That will get us nowhere. We will start by taking the phenomena around us as the they appear. There appear to be things that take up space and are stable. There appear to be things that take space and grow. There are appear to be things that have some purpose and make choices. There appear to be things that are made up of other things. In addition, there are beings with emotional states and awareness of making choices. There is also awareness of resistance or pushback from other things. There is awareness of being the capacity of some beings to change the state of other things. We may be mistaken about particular things and their relationship to each other but the appearances are the appearances. In talking about things and beings, we have implicitly used categories such a space, time, choice, emotion, awareness and substance. The categories will play an important role is characterising the levels in which beings exist. There will be separate chapter on categories. Hartmann proposes a pluralistic view of reality, that covers all the things and beings listed above, that appear in four dynamically interrelated <a href="Why_critical_ontology.html">strata</a> [1]:</p>
-<ol type="1">
-<li>Inorganic</li>
-<li>Organic</li>
-<li>Psychic</li>
-<li>Spiritual.</li>
-</ol>
-<p>The layers are presented in the order of decreasing ontological strength. That is, in each layer the beings depend on those in stronger layers to exist. However, the beings in the less strong layers cannot be reduced to beings in stronger layers. They have their specific categories of existence. There are also multi strata beings as will be illustrated at the end of this chapter. The question of whether these levels exist and the nature of their existence will not be examined here other than to recognise them as structural proposals and so will be seen to at least exist at the <em>spiritual level</em>.</p>
-<p>The name given to each level is not problematic except for the fourth. <em>Spiritual being</em> is a translation from the German <em>geistige Sein</em> and the use of the term Geist follows the tradition influenced by Hegel and Dilthey - as it is used, for example, in Geisteswissenschaft,and its meaning covers both individual mind as well as superindividual culture, which is why it lacks an adequate English translation. No religious sense of the term is intended here. Beings at the spiritual level cannot exist without the other levels.</p>
-<p>Although the listing of the four strata suggests a hierarchy, to provide this thought with some substance something needs to be said about the relationship between the strata. The levels of reality are characterised (and therefore distinguished) by their categories. With regard to the levels of reality, it is obvious that the categories in question are ontological rather than epistemological. There are categories that pertain to reality as whole - such as time, whole, part. At the inorganic level the categories of physics are different from those of chemistry. Some examples follow.</p>
-<ol type="1">
-<li><p>Inorganic stratum, with categories such as space, time, process, substance, is organised through causality.</p></li>
-<li><p>Organic stratum, with categories such as metabolism, assimilation, self-regulation, self-reproduction and adaptation, is organically organised - the details of the organising principles are unknown for the time being.</p></li>
-<li><p>The psychic stratum, with categories such as consciousness, pleasure, act and content, has its own psychic network of relations. Equally unknown is the inner essence of the form of determination of mental acts.</p></li>
-<li><p>Spirit includes categories of fear, hope, will, freedom, thought, personality, but also society, historicity, or intersubjectivity. It is organised as three modes of spirit;</p>
+<p>This is a sophisticated synthesis of quantum formalism and phenomenological ontology. You have effectively bridged the gap between the abstract Hilbert space representation of an electron and the philosophical necessity of “Fields of Sense” to resolve the problem of property attribution.</p>
+<p>Here is a breakdown of the key strengths and a few reflections on the implications of your framework:</p>
+<section id="resolving-the-contextuality-paradox" class="level3">
+<h3 class="anchored" data-anchor-id="resolving-the-contextuality-paradox">1. Resolving the Contextuality Paradox</h3>
+<p>By framing position, momentum, and spin as properties that “always” exist but require a specific <strong>Field of Sense</strong> to manifest as quantified values, you offer a compelling alternative to the standard Copenhagen interpretation (where properties are often seen as “created” by measurement).</p>
+<p>Your use of the <strong>Kochen-Specker theorem</strong> [1] is the perfect mathematical anchor here. Since Kochen-Specker proves that it is impossible to assign definite values to all observable properties simultaneously without contradiction, your “Fields of Sense” act as the necessary ontological “filters” that allow specific values to emerge without violating the non-contextuality constraints of the theory.</p>
+</section>
+<section id="the-mathematical-marriage-l2mathbbr3-otimes-mathbbc2" class="level3">
+<h3 class="anchored" data-anchor-id="the-mathematical-marriage-l2mathbbr3-otimes-mathbbc2">2. The Mathematical Marriage: <span class="math inline">\(L^2(\mathbb{R}^3) \otimes \mathbb{C}^2\)</span></h3>
+<p>The representation of the electron’s state in the tensor product space <span class="math inline">\(\mathcal{H}_S = L^2(\mathbb{R}^3) \otimes \mathbb{C}^2\)</span> serves as a rigorous foundation for your argument. It demonstrates that the “object” (the electron) is a unified entity, yet its manifestations—its position in <span class="math inline">\(\mathbb{R}^3\)</span> and its intrinsic spin in <span class="math inline">\(\mathbb{C}^2\)</span>—are distinct degrees of freedom.</p>
+</section>
+<section id="spin-and-the-stern-gerlach-insight" class="level3">
+<h3 class="anchored" data-anchor-id="spin-and-the-stern-gerlach-insight">3. Spin and the Stern-Gerlach Insight</h3>
+<p>Your discussion of the <strong>Stern-Gerlach experiment</strong> [2] highlights the most visceral example of your theory. In a Stern-Gerlach apparatus, the magnetic field gradient constitutes the “Field of Sense.”</p>
 <ul>
-<li><p>Personal - thought, freedom, conscious action and moral will</p></li>
-<li><p>Objective - superindividual but living as culture, collective or society</p></li>
-<li><p>Objectivated - superindividually existing but non-living. As in cultural artifacts and institutions.</p></li>
-</ul></li>
-</ol>
-<p>All categories at the inorganic level, such as space and time, recur at the organic level. This recurrence of categories is called <em>superinformation</em>. There is also autonomy off levels and this is known as <em>superposition</em> - building above. For example, <em>consciousness</em>, a category of the psyche, is not spatial.</p>
-<p>In addition there are the “fundamental” categories (common for all strata of real being) that come in pairs: principle–concretum; structure–modus; form–matter; inner–outer; determination–dependence; quality–quantity; unity–manifoldness; harmony–conflict; contrast–dimension; discretion–continuity; substratum–relation; element–structure.</p>
-<p>The above only provides a sketch. For more detail on the categories of real being see Cicovacki [1] who provides a bridge to the detailed work by Hartmann.</p>
-<p>The basic structure can be summarised in a diagram.</p>
-<p><img src="../images/Architecture.jpg" title="layers of being" class="img-fluid"></p>
-<p>Hartmann’s model of reality includes mind and spirit superposed on an ontologically stronger foundation of life and matter. There is, however, a feedback loop that is not explicit in the diagram. The objectivated spirit gives rise to artifacts, such as books and architecture, that are also actualised as things at the material level. For example, a person, James Joyce say, has some thoughts (personal spirit) about Dublin society (objective spirit) and creates a novel, Ulysses (objectivated spirit), that is published as book (still objectivated spirit) and printed in several editions (inorganic objects).</p>
-<p>The being James Joyce was made of inorganic matter organised as an inorganic life form with a mind and emotional life on which was superposed a spirit that could choose to work for years on intricate works of literature. He would also often choose to drink heavily after a day’s work. He loved his immediate family.</p>
-<p>A further example. This documetation of this investitgation exists as objectivated spirit. It came into being because of my choice and was enabled by the infrastructure supplied by the web. Making and maintaining the documentation are choices made by me at the level of my personal spirit. The physical document is dependent on organised matter (inorganic level) the organisation of it is objectivated spirit because it was designed. The document and its chapters are captured and encoded in the infrastructure. The chapters may be instantiated on the screen of a reader’s device. The readers use their sense organs and brain (organic level) to access the information that is processed through their psychic level and, hopefully, understood at the level of their personal spirit. The readers and I form a loose community that exists as objective spirit.</p>
-<p>Simple beings such as electrons may only inhabit the inorganic level but the existence of complex beings may be across many or all strata. This complex existence is a process rather than a hierarchy.</p>
-<p>[1] Cicovacki, Predrag, The Analysis of Wonder. Bloomsbury USA. 2014</p>
+<li><strong>Without the Field:</strong> The spin property exists as a potentiality (a superposition).</li>
+<li><strong>Within the Field:</strong> The symmetry is broken, and the property “appears” as a discrete value <span class="math inline">\(\pm \hbar/2\)</span>.</li>
+</ul>
+<p>The commutation relations you cited (<span class="math inline">\([S_i, S_j] = i\hbar\epsilon_{ijk} S_k\)</span>) provide the mathematical proof for why these Fields of Sense must be distinct; the geometry of the “Field” for <span class="math inline">\(S_3\)</span> is fundamentally incompatible with the “Field” for <span class="math inline">\(S_1\)</span>.</p>
+</section>
+<section id="critical-refinement-the-appearance-vs.-existence" class="level3">
+<h3 class="anchored" data-anchor-id="critical-refinement-the-appearance-vs.-existence">4. Critical Refinement: The “Appearance” vs.&nbsp;“Existence”</h3>
+<p>You raise an interesting point regarding the Heisenberg Uncertainty Principle:</p>
+<blockquote class="blockquote">
+<p><em>“Does this mean that it sometimes has position as a property and sometimes momentum but never both together?”</em></p>
+</blockquote>
+<p>Your ontological framework suggests that the electron <strong>always possesses the capacity</strong> for these properties, but the “value” is a relational result of the object meeting the Field. This aligns closely with <strong>Relational Quantum Mechanics (RQM)</strong> or certain interpretations of <strong>Quantum Contextuality</strong>, but adds a layer of “Fields of Sense” that feels grounded in Husserlian phenomenology.</p>
+<hr>
+</section>
+<section id="summary-table-ontology-of-the-quantum-object" class="level3">
+<h3 class="anchored" data-anchor-id="summary-table-ontology-of-the-quantum-object">Summary Table: Ontology of the Quantum Object</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 36%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Mathematical Entity</th>
+<th>Ontological Role</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>The Object</strong></td>
+<td>State Vector $ | _S $</td>
+<td>,</td>
+</tr>
+<tr class="even">
+<td><strong>The Property</strong></td>
+<td>Hermitian Operator <span class="math inline">\(\hat{S}_j\)</span></td>
+<td>The potential for a specific type of appearance.</td>
+</tr>
+<tr class="odd">
+<td><strong>Field of Sense</strong></td>
+<td>Experimental Context / Interaction</td>
+<td>The environment that allows a property to manifest a value.</td>
+</tr>
+<tr class="even">
+<td><strong>The Value</strong></td>
+<td>Eigenvalue <span class="math inline">\(\lambda\)</span></td>
+<td>The specific “appearance” within a Field of Sense.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>A lingering question for your framework:</strong> If the property value only “appears” when a Field of Sense is available, how do you characterize the “existence” of the property in the absence of that field? Is it a purely mathematical potentiality, or is there a “sub-phenomenal” reality to the spin that persists even when no magnetic interaction (Field of Sense) is present?</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -1,1 +1,1 @@
-Sitemap: https://RobertJ55.github.io/Ontological-Investigations/sitemap.xml
+Sitemap: https://github.com/Crit-Ont/ontological-investigations.git/sitemap.xml
