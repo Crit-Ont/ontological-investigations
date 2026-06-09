@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -152,7 +171,6 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#flow-diagram-of-key-terms" id="toc-flow-diagram-of-key-terms" class="nav-link" data-scroll-target="#flow-diagram-of-key-terms">Flow diagram of key terms</a></li>
   </ul></li>
-  <li><a href="#bibliography" id="toc-bibliography" class="nav-link" data-scroll-target="#bibliography"><strong>Bibliography</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -180,7 +198,7 @@ window.Quarto = {
 
 <section id="the-philosophical-landscape---physical-layer" class="level1">
 <h1><strong>The Philosophical Landscape - physical layer</strong></h1>
-<p>It was in <em>Taking Heisenberg’s Potentia Seriously</em> [1] that I first encountered Ruth Kastner’s <strong>Relativistic Transactional Interpretation (RTI)</strong>. Michael Epperson, one of the co-authors, has written his own book [2] on quantum mechanics that makes extensive use of the “potentiality” concept. This draws heavily on Whitehead’s <strong>Process Philosophy</strong> but does not provide new physics, relying instead on a decoherence narrative used by many others. But this does not work.</p>
+<p>It was in <em>Taking Heisenberg’s Potentia Seriously</em> <span class="citation" data-cites="kastner2018">(<a href="#ref-kastner2018" role="doc-biblioref">Kastner et al. 2018</a>)</span> that I first encountered Ruth Kastner’s <strong>Relativistic Transactional Interpretation (RTI)</strong>. Michael Epperson, one of the co-authors, has written his own book <span class="citation" data-cites="epperson2004">(<a href="#ref-epperson2004" role="doc-biblioref">Epperson 2004</a>)</span> on quantum mechanics that makes extensive use of the “potentiality” concept. This draws heavily on Whitehead’s <strong>Process Philosophy</strong> but does not provide new physics, relying instead on a decoherence narrative used by many others. But this does not work.</p>
 <p>Kastner’s transactions offer some novel physics in the relativistic formulation, involving an “offer and response” process. In addition, there is an interplay between <strong>space-time events</strong> and the quantum substratum <em>potentia</em>. Whitehead’s process philosophy (which he misleadingly called a “philosophy of organism”) may possibly provide, or be adapted to provide, a coherent cosmology encompassing quantum processes and events, but the physics of events needs to be formulated as well.</p>
 </section>
 <section id="alternative-mechanisms" class="level1">
@@ -190,7 +208,7 @@ window.Quarto = {
 </section>
 <section id="the-whiteheadian-scheme" class="level1">
 <h1><strong>The Whiteheadian Scheme</strong></h1>
-<p>An all-encompassing philosophical scheme that includes events and processes at the microscopic, mesoscopic, and macroscopic scales can only be speculative; but speculation should not be arbitrary. Following Whitehead [3]:</p>
+<p>An all-encompassing philosophical scheme that includes events and processes at the microscopic, mesoscopic, and macroscopic scales can only be speculative; but speculation should not be arbitrary. Following <span class="citation" data-cites="whitehead2010">Whitehead (<a href="#ref-whitehead2010" role="doc-biblioref">2010</a>)</span>:</p>
 <blockquote class="blockquote">
 <p>“…the philosophical scheme should be coherent, logical, and, in respect to its interpretation, applicable and adequate. Here ‘applicable’ means that some items of experience are thus interpretable, and ‘adequate’ means that there are no items incapable of such interpretation. ‘Coherence,’ as here employed, means that the fundamental ideas, in terms of which the scheme is developed, presuppose each other so that in isolation they are meaningless… The term ‘logical’ has its ordinary meaning, including ‘logical’ consistency, or lack of contradiction, the definition of constructs in logical terms, the exemplification of general logical notions in specific instances, and the principles of inference.”</p>
 </blockquote>
@@ -268,20 +286,23 @@ window.Quarto = {
 <section id="flow-diagram-of-key-terms" class="level2">
 <h2 class="anchored" data-anchor-id="flow-diagram-of-key-terms">Flow diagram of key terms</h2>
 <p><img src="../images/Process.png" class="img-fluid"></p>
-</section>
-</section>
-<section id="bibliography" class="level1">
-<h1><strong>Bibliography</strong></h1>
-<ol type="1">
-<li>Ruth E. Kastner, Stuart Kauffman, and Michael Epperson, <em>Taking Heisenberg’s Potentia Seriously</em>, International Journal of Quantum Foundations, March 27, 2018, Vol. 4, Issue 2, pp.&nbsp;158-172.</li>
-<li>Michael Epperson, <em>Quantum Mechanics and the Philosophy of Alfred North Whitehead</em>, Fordham University Press, 2004.</li>
-<li>Alfred N. Whitehead, <em>Process and Reality</em>, corrected edition, Simon and Schuster, May 2010 (First published 1929).</li>
-</ol>
+
 
 
 </section>
+</section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-epperson2004" class="csl-entry" role="listitem">
+Epperson, Michael. 2004. <em>Quantum Mechanics and the Philosophy of Alfred North Whitehead</em>. Fordham University Press.
+</div>
+<div id="ref-kastner2018" class="csl-entry" role="listitem">
+Kastner, Ruth E., Stuart Kauffman, and Michael Epperson. 2018. <span>“Taking Heisenberg’s Potentia Seriously.”</span> <em>International Journal of Quantum Foundations</em> 4 (2): 158–72.
+</div>
+<div id="ref-whitehead2010" class="csl-entry" role="listitem">
+Whitehead, Alfred North. 2010. <em>Process and Reality</em>. Corrected edition. Simon; Schuster.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

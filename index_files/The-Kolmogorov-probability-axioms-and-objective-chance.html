@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -154,7 +173,6 @@ window.Quarto = {
   <li><a href="#a-reformulated-neutral-axiom-set" id="toc-a-reformulated-neutral-axiom-set" class="nav-link" data-scroll-target="#a-reformulated-neutral-axiom-set">A Reformulated Neutral Axiom Set</a></li>
   <li><a href="#applications-the-die-and-the-electron" id="toc-applications-the-die-and-the-electron" class="nav-link" data-scroll-target="#applications-the-die-and-the-electron">Applications: The Die and the Electron</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
@@ -180,7 +198,7 @@ window.Quarto = {
 </header>
 
 
-<p><em>Philosophy of Probability and Statistical Modelling</em> by Mauricio Suárez [1] provides a historical overview of the philosophy of probability and argues for the significance of this philosophy for well-founded statistical modelling. Within this wider scope, the book discusses the themes: objective probability, propensities, and measurements. So, it has much in common with the themes of this investitgation.</p>
+<p><em>Philosophy of Probability and Statistical Modelling</em> by Mauricio Suárez <span class="citation" data-cites="suarez2021">(<a href="#ref-suarez2021" role="doc-biblioref">Suárez 2021</a>)</span> provides a historical overview of the philosophy of probability and argues for the significance of this philosophy for well-founded statistical modelling. Within this wider scope, the book discusses the themes: objective probability, propensities, and measurements. So, it has much in common with the themes of this investitgation.</p>
 <p>Suárez defends a model of objective probability that disentangles propensity from single-case chance and the observed sequences of outputs that result in relative frequencies of outcomes. This is close to what I argued for in <em>Potentiality and Probability</em>, but there are differences that I will return to in a future chapter.</p>
 <section id="subjective-vs.-objective-probability" class="level1">
 <h1>Subjective vs.&nbsp;Objective Probability</h1>
@@ -191,7 +209,7 @@ window.Quarto = {
 <section id="the-suárez-formulation" class="level1">
 <h1>The Suárez Formulation</h1>
 <p>The axioms that Suárez states are as follows. Let <span class="math inline">\(\{E_1, E_2, \dots, E_n\}\)</span> be the set of events over which an agent’s degrees of belief range; and let <span class="math inline">\(\Omega\)</span> be an event which occurs necessarily. The axioms of probability may be expressed as follows:</p>
-<p><strong>Axiom 1:</strong> <span class="math inline">\(0 \le P (E) \le 1\)</span>, for any <span class="math inline">\(P (E)\)</span>: In other words, all probabilities lie in the real unit number interval.</p>
+<p><strong>Axiom 1:</strong> <span class="math inline">\(0 \le P (E) \le 1\)</span>, for any <span class="math inline">\(E\)</span>: In other words, all probabilities lie in the real unit number interval.</p>
 <p><strong>Axiom 2:</strong> <span class="math inline">\(P (\Omega) =1\)</span>: The tautologous proposition, or the necessary event has probability one.</p>
 <p><strong>Axiom 3:</strong> If <span class="math inline">\(\{E_1, E_2, \dots, E_n\}\)</span> are exhaustive and exclusive events, then <span class="math inline">\(P (E_1) + P(E_2) + \dots + P(E_n) = P (\Omega) = 1\)</span>: This is known as the addition law and is sometimes expressed equivalently as follows: If <span class="math inline">\(\{E_1, E_2, \dots, E_n\}\)</span> is a set of exclusive (but not necessarily exhaustive) events then: <span class="math inline">\(P (E_1 \lor E_2 \lor \dots \lor E_n) = P (E_1) + P(E_2) + \dots + P(E_n)\)</span>.</p>
 <p><strong>Axiom 4:</strong> <span class="math inline">\(P (E_1 \land E_2) = P (E_1 | E_2) P (E_2)\)</span>. This is sometimes known as the multiplication axiom, the axiom of conditional probability, or the ratio analysis of conditional probability since it expresses the conditional probability of <span class="math inline">\(E_1\)</span> given <span class="math inline">\(E_2\)</span>.</p>
@@ -200,7 +218,7 @@ window.Quarto = {
 </section>
 <section id="the-kolmogorov-formulation" class="level1">
 <h1>The Kolmogorov Formulation</h1>
-<p>Nathan Morrison has translated the Kolmogorov axioms [2] as:</p>
+<p>Nathan Morrison has translated the Kolmogorov axioms <span class="citation" data-cites="kolmogorov2018">(<a href="#ref-kolmogorov2018" role="doc-biblioref">Kolmogorov 2018</a>)</span> as:</p>
 <p>Let <span class="math inline">\(E\)</span> be a collection of elements <span class="math inline">\(\xi, \eta, \zeta, \dots\)</span>, which we shall call elementary events, and <span class="math inline">\(\mathfrak{F}\)</span> a set of subsets of <span class="math inline">\(E\)</span>; the elements of the set <span class="math inline">\(\mathfrak{F}\)</span> will be called random events.</p>
 <blockquote class="blockquote">
 <p><strong>I.</strong> <span class="math inline">\(\mathfrak{F}\)</span> is a field of sets.</p>
@@ -281,17 +299,19 @@ window.Quarto = {
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
 <p>The subjectivity enters through interpreting <span class="math inline">\(P\)</span> as credence or degree of belief. In applications with objective probability, <span class="math inline">\(P(A)\)</span> is a numerical assignment of the strength of the single-chance tendency for an elementary event to appear in set <span class="math inline">\(A\)</span>. In objective probability <span class="math inline">\(P\)</span> is <strong>ontological</strong>, but in subjective probability it is <strong>epistemic</strong>.</p>
-<hr>
-</section>
-<section id="references" class="level1">
-<h1>References</h1>
-<p>[1] Mauricio Suárez, <em>Philosophy of Probability and Statistical Modelling</em>, Cambridge University Press, 2021.</p>
-<p>[2] Kolmogorov, AN. (2018) <em>Foundations of the Theory of Probability</em>. Dover Publications.</p>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-kolmogorov2018" class="csl-entry" role="listitem">
+Kolmogorov, Andrey Nikolaevich. 2018. <em>Foundations of the Theory of Probability</em>. Dover Publications.
+</div>
+<div id="ref-suarez2021" class="csl-entry" role="listitem">
+Suárez, Mauricio. 2021. <em>Philosophy of Probability and Statistical Modelling</em>. Cambridge University Press.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
