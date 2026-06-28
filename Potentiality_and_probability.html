@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Potentiality and Probability – Ontological Investigations</title>
+<title>12&nbsp; Potentiality and Probability – Ontological Investigations</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,32 +23,53 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./The-Kolmogorov-probability-axioms-and-objective-chance.html" rel="next">
+<link href="./Concepts-of-causal-powers.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-9e3e5b9121e68b3f077afb32f2c64d95.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -101,71 +122,330 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../custom.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Ontological Investigations</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
-<span class="menu-text">About this site</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Potentiality_and_probability.html">Probability and potentiality</a></li><li class="breadcrumb-item"><a href="./Potentiality_and_probability.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Potentiality and Probability</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Ontological Investigations</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cover.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Ontological Investigations</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Preface</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Foundation</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Why_critical_ontology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Why a critical ontology?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./strata.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Strata of being</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Fields_of_Sense.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Objects in a Field of Sense</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./the-heart-of-matter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Ontological Framework: Nicolai Hartmann and Quantum Mechanics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Hartmann_and_Hayek_A_Comparative_Ontology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Hartmann and Hayek: A Comparative Ontology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Taking_Process_Philosophy_Seriously.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Taking process philosophy seriously</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Dispositions and powers</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./The-ontology-of-dispositions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">The ontology of dispositions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Concepts-of-causal-powers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Concepts of causal powers</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Probability and potentiality</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Potentiality_and_probability.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Potentiality and Probability</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./The-Kolmogorov-probability-axioms-and-objective-chance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">The Kolmogorov probability axioms and objective chance</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Conditional-probability-Renyi-versus-Kolmogorov.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Conditional probability: Renyi versus Kolmogorov</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Physical layer</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./A_Relational_Reconstruction_of_Quantum_Mechanics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">A Relational Reconstruction of Quantum Mechanics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Heisenberg_Potentiality_and_Quantum_Ontology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Heisenberg, Potentiality, and Quantum Ontology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./The_double_slit_experiment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">The double slit experiment</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Locality_and_quantum_mechanics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Locality, Microcausality, and Entanglement</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Comparison-of-quantum-physical-ontologies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Comparison of quantum physical ontologies</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Quantum_objects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Introduction to Physical Ontology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./The_combination_of_quantum_objects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">The Combination of Quantum Objects</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Quantum-chance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Quantum chance</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./quantum_modal_ontology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Modal categories and quantum chance</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Events_Histories_ and_Trees.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">The Quantum Mechanics of Events, Histories and Trees</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Prediction_indeterminacy_and_randomness.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">The Impossibility of Prediction and Quantum Indeterminacy</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Events_in_quantum_mechanics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Events in quantum mechanics: a simple proposal</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Psychic layer</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sensory_order.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Sensory order</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Hartmann_and_Hayek.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Hartmann and Hayek on layered reality</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Spiritual layer</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Ontological_Critiques_of_the_Notion_of_Government.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Ontological Critiques of the Notion of Government</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">End</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#tendencies" id="toc-tendencies" class="nav-link active" data-scroll-target="#tendencies">Tendencies</a>
+  <li><a href="#tendencies" id="toc-tendencies" class="nav-link active" data-scroll-target="#tendencies"><span class="header-section-number">12.1</span> Tendencies</a>
   <ul class="collapse">
-  <li><a href="#example-adapted-from-anjum-and-mumford" id="toc-example-adapted-from-anjum-and-mumford" class="nav-link" data-scroll-target="#example-adapted-from-anjum-and-mumford">Example (adapted from Anjum and Mumford)</a></li>
+  <li><a href="#example-adapted-from-anjum-and-mumford" id="toc-example-adapted-from-anjum-and-mumford" class="nav-link" data-scroll-target="#example-adapted-from-anjum-and-mumford"><span class="header-section-number">12.1.1</span> Example (adapted from Anjum and Mumford)</a></li>
   </ul></li>
-  <li><a href="#initial-discussion-of-probability" id="toc-initial-discussion-of-probability" class="nav-link" data-scroll-target="#initial-discussion-of-probability">Initial Discussion of Probability</a></li>
-  <li><a href="#probability-vs.-necessity" id="toc-probability-vs.-necessity" class="nav-link" data-scroll-target="#probability-vs.-necessity">Probability vs.&nbsp;Necessity</a>
+  <li><a href="#initial-discussion-of-probability" id="toc-initial-discussion-of-probability" class="nav-link" data-scroll-target="#initial-discussion-of-probability"><span class="header-section-number">12.2</span> Initial Discussion of Probability</a></li>
+  <li><a href="#probability-vs.-necessity" id="toc-probability-vs.-necessity" class="nav-link" data-scroll-target="#probability-vs.-necessity"><span class="header-section-number">12.3</span> Probability vs.&nbsp;Necessity</a>
   <ul class="collapse">
-  <li><a href="#the-rai-stone-example" id="toc-the-rai-stone-example" class="nav-link" data-scroll-target="#the-rai-stone-example">The Rai Stone Example</a></li>
+  <li><a href="#the-rai-stone-example" id="toc-the-rai-stone-example" class="nav-link" data-scroll-target="#the-rai-stone-example"><span class="header-section-number">12.3.1</span> The Rai Stone Example</a></li>
   </ul></li>
-  <li><a href="#probabilities-and-chance" id="toc-probabilities-and-chance" class="nav-link" data-scroll-target="#probabilities-and-chance">Probabilities and Chance</a></li>
-  <li><a href="#radioactive-decay-and-quantum-theory" id="toc-radioactive-decay-and-quantum-theory" class="nav-link" data-scroll-target="#radioactive-decay-and-quantum-theory">Radioactive Decay and Quantum Theory</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#probabilities-and-chance" id="toc-probabilities-and-chance" class="nav-link" data-scroll-target="#probabilities-and-chance"><span class="header-section-number">12.4</span> Probabilities and Chance</a></li>
+  <li><a href="#radioactive-decay-and-quantum-theory" id="toc-radioactive-decay-and-quantum-theory" class="nav-link" data-scroll-target="#radioactive-decay-and-quantum-theory"><span class="header-section-number">12.5</span> Radioactive Decay and Quantum Theory</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">12.6</span> Conclusion</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Potentiality_and_probability.html">Probability and potentiality</a></li><li class="breadcrumb-item"><a href="./Potentiality_and_probability.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Potentiality and Probability</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Potentiality and Probability</h1>
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Potentiality and Probability</span></h1>
 </div>
 
 
@@ -182,7 +462,7 @@ window.Quarto = {
 </header>
 
 
-<p>As outlined in the previous chapter, Barbara Vetter (<em>Potentiality from Dispositions to Modality</em>, Oxford University Press, 2015) developed the concept of potentiality in her theory of dispositional powers. In that theory, potentials are dispositions that are responsible for the manifestation of possibilities. The possibilities then tend to become actual events or states of affairs. The concept of “potential” in philosophy, in a sense close to that discussed here, goes back at least to Aristotle in <em>Metaphysics</em> Book <span class="math inline">\(\Theta\)</span>.</p>
+<p>As outlined in the previous chapter, Barbara <span class="citation" data-cites="vetter2015">Vetter (<a href="references.html#ref-vetter2015" role="doc-biblioref">2015</a>)</span> developed the concept of potentiality in her theory of dispositional powers. In that theory, potentials are dispositions that are responsible for the manifestation of possibilities. The possibilities then tend to become actual events or states of affairs. The concept of “potential” in philosophy, in a sense close to that discussed here, goes back at least to Aristotle in <em>Metaphysics</em> Book <span class="math inline">\(\Theta\)</span>. <span class="citation" data-cites="aristotleMetaphysics">(<a href="references.html#ref-aristotleMetaphysics" role="doc-biblioref">Aristotle, n.d.</a>)</span></p>
 <p>In contrast, probabilities are weightings summing to one that describe in what proportion the possibilities tend to appear. I propose that the potential underpins the actual appearance of the possibilities while probability shapes it. This will be discussed further in this chapter.</p>
 <p>Barbara Vetter proposed a formal definition of possibility in terms of potentiality:</p>
 <blockquote class="blockquote">
@@ -191,53 +471,53 @@ window.Quarto = {
 <p>So, it is further proposed that the probabilities are the weights that can be measured through this iteration using the frequency of appearances of each possibility. Note that this indicates how probabilities can be measured, but it is not a definition of probability.</p>
 <p>In the field of disposition research, there is an unfortunate proliferation of terms meaning roughly the same thing. The concept of “power” brings out a disposition’s causal role, but so does “potential.” As technical terms in the field, both are dispositions. Now “tendency” will also be introduced, and it is often used as yet another flavor of disposition.</p>
 <hr>
-<section id="tendencies" class="level1">
-<h1>Tendencies</h1>
-<p>Barbara Vetter mentions tendencies in passing in her 2015 book on potentiality and, although she discusses graded dispositions, tendencies are not a major topic in that work. In “What Tends to Be: The Philosophy of Dispositional Modality,” Rani Lill Anjum and Stephen Mumford (2018) provide an examination of the relationship between dispositions and probabilities while developing a substantial theory of dispositional tendency.</p>
+<section id="tendencies" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="tendencies"><span class="header-section-number">12.1</span> Tendencies</h2>
+<p>Barbara Vetter mentions tendencies in passing in her 2015 book on potentiality and, although she discusses graded dispositions, tendencies are not a major topic in that work. In “What Tends to Be: The Philosophy of Dispositional Modality,” <span class="citation" data-cites="anjum2018">(<a href="references.html#ref-anjum2018" role="doc-biblioref">Anjum and Mumford 2018</a>)</span> Rani Lill Anjum and Stephen Mumford (2018) provide an examination of the relationship between dispositions and probabilities while developing a substantial theory of dispositional tendency.</p>
 <p>In their treatment, powers are understood as disposing towards their manifestations, rather than necessitating them. This is consistent with Vetter’s potentials. Tendencies are powers that do not necessitate manifestations, but nonetheless, the power will iteratively cause the possibility to be the case.</p>
 <p>In common usage, a contingency is something that might possibly happen in the future. That is, it is a possibility. A more technical but still common view is that contingency is something that could be either true or false. This captures an aspect of possibility, but not completely because there is no role for <strong>potentiality</strong>; something responsible for the possibilities. There is also logical possibility in which anything that does not imply a contradiction is logically possible. This concept may be fine for logic, but in this discussion, it is possibilities that can appear in the world that are under consideration. Here, an actual possibility needs a potentiality to tend to produce it.</p>
-<section id="example-adapted-from-anjum-and-mumford" class="level2">
-<h2 class="anchored" data-anchor-id="example-adapted-from-anjum-and-mumford">Example (adapted from Anjum and Mumford)</h2>
+<section id="example-adapted-from-anjum-and-mumford" class="level3" data-number="12.1.1">
+<h3 data-number="12.1.1" class="anchored" data-anchor-id="example-adapted-from-anjum-and-mumford"><span class="header-section-number">12.1.1</span> Example (adapted from Anjum and Mumford)</h3>
 <p>Struck matches tend to light. Although disposed to light when struck, we all know that there is no guarantee that they will light as there are many times a struck match fails to light. But there is an iterated potentiality for it to be the case that the match lights. The lighting of a struck match is more than a mere possibility or a logical possibility. There are many mere possibilities towards which the struck match has no disposition—that is, no potential in the match towards struck matches melting, for instance.</p>
 <p>Iterated potentiality provides the tendency for possible outcomes to show some patterns in their manifestation. In very controlled cases, the number of cases of success in iterations of match striking could provide a measure of the strength of the power that is this potentiality. This would require a collection of matches that are essentially the same.</p>
 <hr>
 </section>
 </section>
-<section id="initial-discussion-of-probability" class="level1">
-<h1>Initial Discussion of Probability</h1>
+<section id="initial-discussion-of-probability" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="initial-discussion-of-probability"><span class="header-section-number">12.2</span> Initial Discussion of Probability</h2>
 <p>Anjum and Mumford introduce their discussion of probability through a simple example that builds on a familiar understanding of dispositional tendencies associated with fragility.</p>
 <blockquote class="blockquote">
-<p>“The fragility of a wine glass, for instance, might be understood to be a strong disposition towards breakage with as much as 0.8 probability, whereas the fragility of a car windscreen probabilities its breaking to the lesser degree 0.3. Furthermore, it is open to a holder of such a theory to state that the probability of breakage can increase or decrease in the circumstances and, indeed, that the manifestation of the tendency occurs when and only when its probability reaches one.”</p>
+<p>“The fragility of a wine glass, for instance, might be understood to be a strong disposition towards breakage with as much as 0.8 probability, whereas the fragility of a car windscreen predicts its breaking to the lesser degree 0.3. Furthermore, it is open to a holder of such a theory to state that the probability of breakage can increase or decrease in the circumstances and, indeed, that the manifestation of the tendency occurs when and only when its probability reaches one.”</p>
 </blockquote>
 <p>This example is merely an introduction and needs further development, but already the claim that “the manifestation of the tendency occurs when and only when its probability reaches one” shows that it is not a model for objective probability. What is needed is a theory of dispositions that explains stable probability distributions. Of course, if the glass is broken, then the probability of it being broken is <span class="math inline">\(1\)</span>. However, this has nothing to do with the dispositional tendency to break. What is needed is a systemic understanding of the relationship between the strength of a dispositional tendency and the values or, in the continuous case, shape of a probability distribution.</p>
 <p>In the quoted example above, each power is to be understood in terms of a probability of the occurrence of a certain effect, which is given a specific value. The fragility of a wine glass, for instance, might be understood to be a strong disposition towards breakage with as much as <span class="math inline">\(0.8\)</span> probability, whereas the fragility of a car windscreen is less, and the probability of its breaking is a lesser degree <span class="math inline">\(0.3\)</span>. But given a wine glass or windscreen produced to certain norms and standards, it would be expected that the disposition towards breakage would be quite stable. A glass with a different disposition would be a different glass.</p>
-<p>Anjum and Mumford claim that, in some understandings, the manifestation of a possibility occurs when and only when its probability reaches one (see Popper, <em>A World of Propensities</em>, 1990: 13, 20). This is a misunderstanding of how probability works. Popper distinguished clearly between the mathematical probability measure and what he called the physical propensity, which is more like a force, but Popper does limit a propensity to have a strength of at most <span class="math inline">\(1\)</span>. As I will attempt to show below, Popper, in proposing the propensity interpretation of objective probabilities, oversimplifies the relationship between dispositions and probabilities. This confusion led Humphreys to draft a paper (<em>The Philosophical Review</em>, Vol. XCIV, No.&nbsp;4, October 1985) to show that propensities cannot be probabilities. As indeed they are not. They are dispositions. That would leave open the proposition that probabilities are dispositional tendencies, but that also will turn out to be untenable.</p>
+<p>Anjum and Mumford claim that, in some understandings, the manifestation of a possibility occurs when and only when its probability reaches one (see Popper, <em>A World of Propensities</em>, <span class="citation" data-cites="popper1990">(<a href="references.html#ref-popper1990" role="doc-biblioref">Popper 1990</a>)</span>). This is a misunderstanding of how probability works. Popper distinguished clearly between the mathematical probability measure and what he called the physical propensity, which is more like a force, but Popper does limit a propensity to have a strength of at most <span class="math inline">\(1\)</span>. As I will attempt to show below, Popper, in proposing the propensity interpretation of objective probabilities, oversimplifies the relationship between dispositions and probabilities. This confusion led Humphreys to draft a paper <span class="citation" data-cites="humphreys1985">(<a href="references.html#ref-humphreys1985" role="doc-biblioref">Humphreys 1985</a>)</span>, <em>The Philosophical Review</em>, to show that propensities cannot be probabilities. As indeed they are not. They are dispositions. That would leave open the proposition that probabilities are dispositional tendencies, but that also will turn out to be untenable.</p>
 <p>The proposal by Anjum and Mumford that powers can <strong>over-dispose</strong> does seem to be sound. Over-disposing is where there is a stronger magnitude than what is minimally needed to bring about a particular possibility. This indicates that there is a difference between the notion of having a power to some degree and the probability of the power’s manifestation occurring. Among other conclusions, this also shows that the dispositional tendency does not reduce to probability, preserving its status as a potential.</p>
 <p>Anjum and Mumford continue the discussion using “propensity” as having a tendency to some degree, where degree is non-probabilistically defined. Anjum and Mumford use the notions of “power,” “disposition,” and “tendency” more or less interchangeably, whereas an object may have a power to a degree, there are powers that are simply properties. In what follows, I will try to eliminate the use of “propensity,” except where commenting on the usage of others, and use “tendency” to qualify either “power,” “potential,” or “disposition” rather than let it stand on its own.</p>
 <hr>
 </section>
-<section id="probability-vs.-necessity" class="level1">
-<h1>Probability vs.&nbsp;Necessity</h1>
+<section id="probability-vs.-necessity" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="probability-vs.-necessity"><span class="header-section-number">12.3</span> Probability vs.&nbsp;Necessity</h2>
 <p>A probability always takes a value within a bounded inclusive range between zero and one. If probability is <span class="math inline">\(1\)</span>, then probability theory stipulates that it is “almost certain” (occurs except for a set of cases of measure zero). In contrast to what Anjum and Mumford claim, it is not natural to interpret this as necessity because there are exceptions. For cases where there are only a finite set of possibilities, then probability <span class="math inline">\(1\)</span> does mean that there are no exceptions. But as this is a special case in applied probability theory, there is no justification in equating it with logical or metaphysical necessity.</p>
 <p>A power must be strong enough to reach the threshold to make the possibilities actual. Once the power is strong enough, then the probability distribution over the possibilities may be stable or affected by other aspects of the situation. So, instead of understanding powers and their degrees of strength as probabilistic, powers and their tendencies towards certain manifestations are the underpinning grounds of probabilities. Consider the example of tossing a coin.</p>
 <p>A coin when tossed has the potential to fall either heads or tails. This tendency to fall either way can be made symmetric and then the coin is “fair.” From which probability weightings of <span class="math inline">\(1/2\)</span> for each outcome (taking account of the tossing mechanism) can be assumed and then confirmed by measuring the proportion of outcomes on iteration. The reason why the head and the tail events are equally probable statistically, when a fair coin is tossed, is that the coin is equally disposed towards those two outcomes due to its physical constitution. The probability weightings derive, in this example, from a symmetry in the potentiality, which in turn derives from the physical composition and detailed geometry of the coin.</p>
-<section id="the-rai-stone-example" class="level2">
-<h2 class="anchored" data-anchor-id="the-rai-stone-example">The Rai Stone Example</h2>
+<section id="the-rai-stone-example" class="level3" data-number="12.3.1">
+<h3 data-number="12.3.1" class="anchored" data-anchor-id="the-rai-stone-example"><span class="header-section-number">12.3.1</span> The Rai Stone Example</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/rai_stones.jpeg" class="img-fluid figure-img"></p>
+<p><img src="./images/rai_stones.jpeg" class="img-fluid figure-img"></p>
 <figcaption>https://en.m.wikipedia.org/wiki/Rai_stones</figcaption>
 </figure>
 </div>
-<p>Consider a society that uses very large stone discs as currency (e.g., <a href="https://en.m.wikipedia.org/wiki/Rai_stones">Rai stones</a>). On examination of the disc, it would be possible to conjecture that if it were tossed then there would be two possible outcomes and that those outcomes are equally likely. But this disposition is not realized because of the effort required to construct the tossing mechanism, as such a stone may weigh several metric tons. The enabling disposition that would give rise to the iteration of possibilities would have been this missing tossing mechanism. It is not a property of the disc.</p>
+<p>Consider a society that uses very large stone discs as currency (e.g., <a href="https://en.m.wikipedia.org/wiki/Rai_stones">Rai stones</a>). On examination of the disc, it would be possible to conjecture that if it were tossed, then there would be two possible outcomes and that those outcomes are equally likely. But this disposition is not realized because of the effort required to construct the tossing mechanism, as such a stone may weigh several metric tons. The enabling disposition that would give rise to the iteration of possibilities would have been this missing tossing mechanism. It is not a property of the disc.</p>
 <p>The manifestation of the dispositional tendency of the disc to come to lie in one of two states needs an external mechanism that is disposed through design to toss the coin in a certain way. If the mechanism is constructed, it may be too weak. It may tend to only flip the coin once, giving a sequence such as:</p>
 <p><span class="math inline">\(... T H T H T H H T H T H T H T H T H T H ...\)</span></p>
 <p>That would give a frequency of T close to <span class="math inline">\(1/2\)</span>, but the sequence does not exhibit the potential for random outcomes to which the coin is disposed.</p>
 <hr>
 </section>
 </section>
-<section id="probabilities-and-chance" class="level1">
-<h1>Probabilities and Chance</h1>
+<section id="probabilities-and-chance" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="probabilities-and-chance"><span class="header-section-number">12.4</span> Probabilities and Chance</h2>
 <p>From the above: potential and possibility are more fundamental than (or prior to) probability. Both are needed to construct and explain objective probability. The alternative, subjective probability, is based on beliefs about possibilities, but that is not the same thing as what is actually possible and how things will appear independently of anyone’s beliefs or judgments.</p>
 <p>In this investigation, I have already referred to a dispositional tendency beginning to explain objective probabilities in quantum mechanics. The term “propensity” has been used to describe these probabilities. I now think that was wrong. Propensity should be reserved for the dispositional tendency that is responsible for the probabilities to avoid this term merging the underpinning dispositional elements and probability structure. Anjum and Mumford claim that they have made a key contribution to clarifying the relationship between dispositional tendencies and probability through their analysis of <strong>over-disposition</strong>.</p>
 <p>Anjum and Mumford claim “information is lost in the putative conversion of propensities to probabilities,” but only if the dispositional grounding of probabilities is forgotten. Their discussion is strongly influenced by their interest in application to medical evidence where a major goal is reduction of uncertainty. Anjum and Mumford propose two rules on how dispositions and probability relate:</p>
@@ -248,19 +528,19 @@ window.Quarto = {
 <p>While these rules are fine as propositions, they miss the mark in explaining the relationship between dispositions and probability. In the coin tossing example, strengthening the mechanism is not about strengthening one outcome. Over-disposing does provide support for the distinction between the strength of the disposition and value of the probability, but the relationship between underpinning potentials, dispositional mechanisms, and the iterated outcomes needs to be made clear.</p>
 <hr>
 </section>
-<section id="radioactive-decay-and-quantum-theory" class="level1">
-<h1>Radioactive Decay and Quantum Theory</h1>
+<section id="radioactive-decay-and-quantum-theory" class="level2" data-number="12.5">
+<h2 data-number="12.5" class="anchored" data-anchor-id="radioactive-decay-and-quantum-theory"><span class="header-section-number">12.5</span> Radioactive Decay and Quantum Theory</h2>
 <p>Anjum and Mumford also discuss coin tossing and make substantially the same points as I made above. However, having clarified the distinction between propensity and probability, they revert to using the term propensity in a way that risks confusing the concepts of dispositional tendency and probabilities with random outcomes. They say “50% propensity” rather than “50% probability.” They then introduce the term “chance” that they relate to outcomes in some specified situations. Propensity is then reserved by them for potential probability while chance is the probability of an outcome in a situation. This is more confusing than helpful.</p>
 <p>Anjum and Mumford go on to a discussion of radioactive decay that is known to be described by quantum theory. They make no mention of quantum theory (this will be corrected by them in Chapter 4) and strangely claim that radioactive decay is not probabilistic. The probability distributions derived from quantum mechanics unambiguously give the probability of decay per unit time. There are, per unit time, two possibilities: “decay” or “no decay.” Their error is to claim “only one manifestation type” (decay) and from this that there is only one possibility. Ignoring quantum mechanics, they write:</p>
 <blockquote class="blockquote">
 <p>“The reason it is tempting to think of radioactive decay as probabilistic is that there is certainly a distinct tendency to decay that varies in strength for different kinds of particles, where that strength is specified in terms of a half-life (the time at which there is a 50/50 chance of decay having occurred).”</p>
 </blockquote>
-<p>But no, the reason to think that radioactive decay is probabilistic is that our best theory of nuclear phenomena explains it in terms of probabilities. This misunderstanding leads them to introduce the concept of indeterministic propensities. However they have arrived at the concept, it is left open as to whether there are non-probabilistic indeterminate powers, but radioactive decay is not an example.</p>
+<p>But no, the reason to think that radioactive decay is probabilistic is that our best theory of nuclear phenomena explains it in terms of probabilities. This misunderstanding leads them to introduce the concept of indeterministic propensities. Independently of how they arrived at the concept, it is left open as to whether there are non-probabilistic indeterminate powers, but radioactive decay is not an example.</p>
 <hr>
 </section>
-<section id="conclusion" class="level1">
-<h1>Conclusion</h1>
-<p>The examples of the concept of chance provided by Anjum and Mumford can be derived in their examples from a correct application of probability theory. Chance is often used as a term for “objective probability,” and I have done so in previous chapters. I will continue to follow that usage and exploit the clarification obtained from the analysis above that shows that objective probability depends on the possibilities that are properties of an object. The manifestation of these possibilities may require an enabling mechanism. The statistical regularities displayed by these manifestations on iteration are due primarily to the physical properties of the object unless the enabling mechanism is badly designed.</p>
+<section id="conclusion" class="level2" data-number="12.6">
+<h2 data-number="12.6" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">12.6</span> Conclusion</h2>
+<p>The examples of the concept of chance provided by Anjum and Mumford can be derived in their examples from a correct application of probability theory. Chance is often used as a term for “objective probability,” and I have done so in previous chapters. I will continue to follow that usage and exploit the clarification obtained from the analysis above shows that objective probability depends on the possibilities that are properties of an object. The manifestation of these possibilities may require an enabling mechanism. The statistical regularities displayed by these manifestations on iteration are due primarily to the physical properties of the object unless the enabling mechanism is badly designed.</p>
 <p>The term “propensity” has given rise to much confusion in the literature. Now that we are reaching an explanation of objective probability, the term “propensity” might better be avoided.</p>
 <p>I propose that the model of objective probability is that:</p>
 <blockquote class="blockquote">
@@ -274,6 +554,23 @@ window.Quarto = {
 </ol>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-anjum2018" class="csl-entry" role="listitem">
+Anjum, Rani Lill, and Stephen Mumford. 2018. <em>What Tends to Be: The Philosophy of Dispositional Modality</em>. Routledge.
+</div>
+<div id="ref-aristotleMetaphysics" class="csl-entry" role="listitem">
+Aristotle. n.d. <em>Metaphysics <span class="math inline">\(\theta\)</span></em>.
+</div>
+<div id="ref-humphreys1985" class="csl-entry" role="listitem">
+Humphreys, Paul. 1985. <span>“Why Propensities Cannot Be Probabilities.”</span> <em>The Philosophical Review</em> 94 (4): 557–70.
+</div>
+<div id="ref-popper1990" class="csl-entry" role="listitem">
+Popper, Karl R. 1990. <em>A World of Propensities</em>. Thales.
+</div>
+<div id="ref-vetter2015" class="csl-entry" role="listitem">
+Vetter, Barbara. 2015. <em>Potentiality: From Dispositions to Modality</em>. Oxford University Press.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -350,7 +647,7 @@ window.Quarto = {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/github\.com\/Crit-Ont\/ontological-investigations\.git");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -677,6 +974,18 @@ window.Quarto = {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Concepts-of-causal-powers.html" class="pagination-link" aria-label="Concepts of causal powers">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Concepts of causal powers</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./The-Kolmogorov-probability-axioms-and-objective-chance.html" class="pagination-link" aria-label="The Kolmogorov probability axioms and objective chance">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">The Kolmogorov probability axioms and objective chance</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 

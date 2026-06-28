@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Academic Draft">
+<meta name="dcterms.date" content="2026-06-11">
 
-<title>Ontological Investigations</title>
+<title>21&nbsp; The Combination of Quantum Objects – Ontological Investigations</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,7 +25,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -33,8 +54,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./about.html" rel="next">
-<link href="./cover.html" rel="prev">
+<link href="./Quantum-chance.html" rel="next">
+<link href="./Quantum_objects.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -73,6 +94,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -85,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./A_Relational_Reconstruction_of_Quantum_Mechanics.html">Physical layer</a></li><li class="breadcrumb-item"><a href="./The_combination_of_quantum_objects.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">The Combination of Quantum Objects</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -118,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
   </div>
 </li>
@@ -274,7 +324,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./The_combination_of_quantum_objects.html" class="sidebar-item-text sidebar-link">
+  <a href="./The_combination_of_quantum_objects.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">The Combination of Quantum Objects</span></span></a>
   </div>
 </li>
@@ -372,40 +422,34 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface"><strong>Preface</strong></a></li>
-  <li><a href="#layered-ontology" id="toc-layered-ontology" class="nav-link" data-scroll-target="#layered-ontology">Layered ontology</a></li>
-  <li><a href="#process-ontology" id="toc-process-ontology" class="nav-link" data-scroll-target="#process-ontology">Process ontology</a></li>
-  <li><a href="#dispositions-and-powers" id="toc-dispositions-and-powers" class="nav-link" data-scroll-target="#dispositions-and-powers">Dispositions and powers</a></li>
-  <li><a href="#probability-and-potentiality" id="toc-probability-and-potentiality" class="nav-link" data-scroll-target="#probability-and-potentiality">Probability and potentiality</a></li>
-  <li><a href="#physics" id="toc-physics" class="nav-link" data-scroll-target="#physics">Physics</a></li>
-  <li><a href="#psychic-level" id="toc-psychic-level" class="nav-link" data-scroll-target="#psychic-level">Psychic level</a></li>
-  <li><a href="#spiritual" id="toc-spiritual" class="nav-link" data-scroll-target="#spiritual">Spiritual</a></li>
-  <li><a href="#society" id="toc-society" class="nav-link" data-scroll-target="#society">Society</a>
-  <ul class="collapse">
-  <li><a href="#government" id="toc-government" class="nav-link" data-scroll-target="#government">Government</a></li>
-  <li><a href="#economics" id="toc-economics" class="nav-link" data-scroll-target="#economics">Economics</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./A_Relational_Reconstruction_of_Quantum_Mechanics.html">Physical layer</a></li><li class="breadcrumb-item"><a href="./The_combination_of_quantum_objects.html"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">The Combination of Quantum Objects</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Ontological Investigations</h1>
+<h1 class="title"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">The Combination of Quantum Objects</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Academic Draft </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 11, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -415,90 +459,21 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>These investigations will be organised in sections and chapters. The structure is that of an online book that is a work in progress.</p>
-<p><em>The assistance of Gemini is acknowledged for the illustrtations and formatting.</em></p>
-<section id="preface" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="preface"><a href="./about.html"><strong>Preface</strong></a></h2>
-</section>
-<section id="layered-ontology" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="layered-ontology">Layered ontology</h2>
-<p><img src="./images/layer_ontology.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./Why_critical_ontology.html">Why critical ontology?</a></li>
-<li><a href="./strata.html">Strata of being</a></li>
-<li><a href="./Fields_of_Sense.html">Objects in a Field of Sense</a></li>
-<li><a href="./the-heart-of-matter.html">Ontological Framework: Nicolai Hartmann and Quantum Mechanics</a></li>
-<li><a href="./Hartmann_and_Hayek_A_Comparative_Ontology.html">Hartmann and Hayek: A Comparative Ontology</a></li>
-</ul>
-</section>
-<section id="process-ontology" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="process-ontology">Process ontology</h2>
-<p><img src="./images/process_ont.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./Taking_Process_Philosophy_Seriously.html">Taking process philosophy seriously</a></li>
-</ul>
-</section>
-<section id="dispositions-and-powers" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="dispositions-and-powers">Dispositions and powers</h2>
-<p><img src="./images/Power_Disp.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./The-ontology-of-dispositions.html">The ontology of dispositions</a></li>
-<li><a href="./Concepts-of-causal-powers.html">Concepts of causal powers</a></li>
-</ul>
-</section>
-<section id="probability-and-potentiality" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="probability-and-potentiality">Probability and potentiality</h2>
-<p><img src="./images/Prot_prob.png" class="img-fluid"></p>
-<ul>
-<li><a href="./Potentiality_and_probability.html">Potentiality and probability</a></li>
-<li><a href="./The-Kolmogorov-probability-axioms-and-objective-chance.html">The Kolmogorov probability axioms and objective chance</a></li>
-<li><a href="./Conditional-probability-Renyi-versus-Kolmogorov.html">Conditional probability: Renyi versus Kolmogorov</a></li>
-</ul>
-</section>
-<section id="physics" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="physics">Physics</h2>
-<p><img src="./images/QM.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./A_Relational_Reconstruction_of_Quantum_Mechanics.html">A relational reconstruction of Quantum Mechanics</a></li>
-<li><a href="./Heisenberg_Potentiality_and_Quantum_Ontology.html">Heisenberg, Potentiality, and Quantum Ontology</a></li>
-<li><a href="./The_double_slit_experiment.html">The double slit experiment</a></li>
-<li><a href="./Locality_and_quantum_mechanics.html">Locality and quantum mechanics</a></li>
-<li><a href="./Comparison-of-quantum-physical-ontologies.html">Comparison of quantum physical ontologies</a></li>
-<li><a href="./Quantum_objects.html">Ontology and the quantum object</a></li>
-<li><a href="./The_combination_of_quantum_objects.html">The combination of quantum objects</a></li>
-<li><a href="./Quantum-chance.html">Quantum chance</a></li>
-<li><a href="./quantum_modal_ontology.html">Modal categories and quantum chance</a></li>
-<li><a href="./Events_Histories_ and_Trees.html">The Quantum Mechanics of Events, Histories and Trees</a></li>
-<li><a href="./Prediction_indeterminacy_and_randomness.html">Prediction, indeterminacy, and randomness</a></li>
-<li><a href="./Events_in_quantum_mechanics.html">Events in quantum mechanics</a></li>
-</ul>
-</section>
-<section id="psychic-level" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="psychic-level">Psychic level</h2>
-<ul>
-<li><a href="./sensory_order.html">Sensory order</a></li>
-</ul>
-</section>
-<section id="spiritual" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="spiritual">Spiritual</h2>
-<ul>
-<li><a href="./Hartmann_and_Hayek.html">Hartmann and Hayek</a></li>
-</ul>
-</section>
-<section id="society" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="society">Society</h2>
-<section id="government" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="government">Government</h3>
-<ul>
-<li><a href="./Ontological_Critiques_of_the_Notion_of_Government.html">Ontological Critiques of the Notion of Government</a></li>
-</ul>
-</section>
-<section id="economics" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="economics">Economics</h3>
+<p>Quantum objects have been introduced in an earlier chapter. These objects, if not the most fundament entities, are quite basic to the constitution of the inorganic layer of reality. In contributing to the complexity of the real world these objects must combine.</p>
+<p>Many calculations in quantum mechanics can be carried out by considering a single isolated system and its the operator representing the total energy of the system - the Hamiltonian. That is how the spectrum of the Hydrogen atom is calculated and how tunnelling is analysed. However, it is especially important in examining contextual issues to consider mathematical representation of the combination and interaction of objects. Having introduced the concept of the <span class="math inline">\(\sigma\)</span>-complex for an isolated system, the <span class="math inline">\(\sigma\)</span>-complex of two systems <span class="math inline">\(S_1\)</span> and <span class="math inline">\(S_2\)</span> will now be constructed.</p>
+<p>As is standard in the von Neumann formulation <span class="citation" data-cites="vonneumann1932">(<a href="references.html#ref-vonneumann1932" role="doc-biblioref">Neumann 1932</a>)</span>, if the Hilbert spaces <span class="math inline">\(\mathcal{H}_1\)</span> associated with object <span class="math inline">\(S_1\)</span> and <span class="math inline">\(\mathcal{H}_2\)</span> associated with object <span class="math inline">\(S_2\)</span>, the Hilbert space of the combined object <span class="math inline">\(S_1 + S_2\)</span> is the tensor product <span class="math inline">\(\mathcal{H}_1 \otimes  \mathcal{H}_2\)</span>.</p>
+<p>Given the combined system <span class="math inline">\(S_1 + S_2\)</span> with the <span class="math inline">\(\sigma\)</span>-complex <span class="math inline">\(Q(\mathcal{H}_1)\oplus Q(\mathcal{H}_2)\)</span>, there is a unique Hilbert space <span class="math inline">\(\mathcal{H}_1\otimes \mathcal{H}_2\)</span> such that <span class="math inline">\(Q(\mathcal{H}_1) \oplus Q(\mathcal{H}_2) \cong Q(\mathcal{H}_1\otimes\mathcal{H}_2)\)</span>, where <span class="math inline">\(\cong\)</span> means equivalence unique up to isomorphism. For the proof, in finite dimensional Hilbert spaces, see <span class="citation" data-cites="kochen2015reconstruction">Kochen (<a href="references.html#ref-kochen2015reconstruction" role="doc-biblioref">2015</a>)</span>.</p>
+<p>The combination of two quantum objects gives a quantum object. This would build up a world consisting only of quantum objects. Is this the case or do the quantum charactertics weaken with many combinations? We will return to this question.</p>
 
 
-</section>
-</section>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-kochen2015reconstruction" class="csl-entry" role="listitem">
+Kochen, Simon. 2015. <span>“A Reconstruction of Quantum Mechanics.”</span> <em>arXiv Preprint arXiv:1506.02154</em>. <a href="https://arxiv.org/abs/1506.02154">https://arxiv.org/abs/1506.02154</a>.
+</div>
+<div id="ref-vonneumann1932" class="csl-entry" role="listitem">
+Neumann, John von. 1932. <em><span class="nocase">Mathematische Grundlagen der Quantenmechanik</span></em>. Springer.
+</div>
+</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -903,13 +878,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./cover.html" class="pagination-link" aria-label="Ontological Investigations">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Ontological Investigations</span></span>
+      <a href="./Quantum_objects.html" class="pagination-link" aria-label="Introduction to Physical Ontology">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Introduction to Physical Ontology</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./about.html" class="pagination-link" aria-label="Preface">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Preface</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Quantum-chance.html" class="pagination-link" aria-label="Quantum chance">
+        <span class="nav-page-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Quantum chance</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

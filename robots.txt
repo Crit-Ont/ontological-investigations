@@ -1,1 +1,0 @@
-Sitemap: https://github.com/Crit-Ont/ontological-investigations.git/sitemap.xml

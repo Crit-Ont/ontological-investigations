@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ontological Investigations</title>
+<title>19&nbsp; Comparison of quantum physical ontologies – Ontological Investigations</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -33,8 +52,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./about.html" rel="next">
-<link href="./cover.html" rel="prev">
+<link href="./Quantum_objects.html" rel="next">
+<link href="./Locality_and_quantum_mechanics.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -73,6 +92,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -85,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./A_Relational_Reconstruction_of_Quantum_Mechanics.html">Physical layer</a></li><li class="breadcrumb-item"><a href="./Comparison-of-quantum-physical-ontologies.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Comparison of quantum physical ontologies</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -118,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
   </div>
 </li>
@@ -262,7 +310,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Comparison-of-quantum-physical-ontologies.html" class="sidebar-item-text sidebar-link">
+  <a href="./Comparison-of-quantum-physical-ontologies.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Comparison of quantum physical ontologies</span></span></a>
   </div>
 </li>
@@ -377,28 +425,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface"><strong>Preface</strong></a></li>
-  <li><a href="#layered-ontology" id="toc-layered-ontology" class="nav-link" data-scroll-target="#layered-ontology">Layered ontology</a></li>
-  <li><a href="#process-ontology" id="toc-process-ontology" class="nav-link" data-scroll-target="#process-ontology">Process ontology</a></li>
-  <li><a href="#dispositions-and-powers" id="toc-dispositions-and-powers" class="nav-link" data-scroll-target="#dispositions-and-powers">Dispositions and powers</a></li>
-  <li><a href="#probability-and-potentiality" id="toc-probability-and-potentiality" class="nav-link" data-scroll-target="#probability-and-potentiality">Probability and potentiality</a></li>
-  <li><a href="#physics" id="toc-physics" class="nav-link" data-scroll-target="#physics">Physics</a></li>
-  <li><a href="#psychic-level" id="toc-psychic-level" class="nav-link" data-scroll-target="#psychic-level">Psychic level</a></li>
-  <li><a href="#spiritual" id="toc-spiritual" class="nav-link" data-scroll-target="#spiritual">Spiritual</a></li>
-  <li><a href="#society" id="toc-society" class="nav-link" data-scroll-target="#society">Society</a>
+  <li><a href="#local-beables" id="toc-local-beables" class="nav-link active" data-scroll-target="#local-beables"><span class="header-section-number">19.1</span> Local beables</a></li>
+  <li><a href="#wavefunction-ontology" id="toc-wavefunction-ontology" class="nav-link" data-scroll-target="#wavefunction-ontology"><span class="header-section-number">19.2</span> Wavefunction ontology</a>
   <ul class="collapse">
-  <li><a href="#government" id="toc-government" class="nav-link" data-scroll-target="#government">Government</a></li>
-  <li><a href="#economics" id="toc-economics" class="nav-link" data-scroll-target="#economics">Economics</a></li>
+  <li><a href="#distributed-charge-and-mass" id="toc-distributed-charge-and-mass" class="nav-link" data-scroll-target="#distributed-charge-and-mass"><span class="header-section-number">19.2.1</span> Distributed charge and mass</a></li>
+  <li><a href="#the-multiverse" id="toc-the-multiverse" class="nav-link" data-scroll-target="#the-multiverse"><span class="header-section-number">19.2.2</span> The multiverse</a></li>
   </ul></li>
+  <li><a href="#bohmian-ontology" id="toc-bohmian-ontology" class="nav-link" data-scroll-target="#bohmian-ontology"><span class="header-section-number">19.3</span> Bohmian ontology</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">19.4</span> Conclusion</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./A_Relational_Reconstruction_of_Quantum_Mechanics.html">Physical layer</a></li><li class="breadcrumb-item"><a href="./Comparison-of-quantum-physical-ontologies.html"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Comparison of quantum physical ontologies</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Ontological Investigations</h1>
+<h1 class="title"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Comparison of quantum physical ontologies</span></h1>
 </div>
 
 
@@ -415,89 +458,97 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>These investigations will be organised in sections and chapters. The structure is that of an online book that is a work in progress.</p>
-<p><em>The assistance of Gemini is acknowledged for the illustrtations and formatting.</em></p>
-<section id="preface" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="preface"><a href="./about.html"><strong>Preface</strong></a></h2>
+<p>In discussing ontology in physics both the real and ideal spheres, as introduced by Nicolai Hartmann, play a role. The pure mathematics, applied to construct theory, is in the ideal sphere and the physical entities are in the real sphere. For example, self-adjoint operators exist in quantum theory and they represent observables (properties of things) that exist (this is claimed as a truth) in the physical world. However, it must always be kept in mind that truth claims are fallible.</p>
+<p>The ontologies discussed in this chapter are proposals for what exists and does not exist in real sphere interpretations of several formulations of quantum mechanics. These proposals are to be contrasted with the aspect of critical ontology that provides the structures for the investigation. A guiding statement, in the spirit of critical ontology, for this investigation, is that by <span class="citation" data-cites="maudlin2019">Maudlin (<a href="references.html#ref-maudlin2019" role="doc-biblioref">2019</a>)</span>:</p>
+<blockquote class="blockquote">
+<p>A physical theory should clearly and forthrightly address two fundamental questions: what there is, and what it does. This section explores a range of options on ‘what there is’ in theories that seek to produce identical or very similar empirical results. If the empirical results were not in agreement, then those theories that did not agree with experiment would be eliminated as not being true, although they could still be of theoretical interest. It is because theories with radically different existence claims can have the same empirical consequences that ontology investigation is interesting and relevant.</p>
+</blockquote>
+<p>In what follows familiarity with standard quantum physics, as taught to physics undergraduates, is assumed. If a reminder is needed then Jennan Ismael’s contribution to The Stanford Encyclopedia of Philosophy <span class="citation" data-cites="ismael2021">(<a href="references.html#ref-ismael2021" role="doc-biblioref">Ismael 2021</a>)</span> may be helpful.</p>
+<p>In the multi-strata model of the real, the discussion that follows deals with physical entities in the inorganic layer. The theories are creations than reside in the objective part of the spiritual layer. There are theories that involve the psychic layer but they will not be considered in this chapter. The psychic layer can only come into play if there is someone there to have perceptions and thoughts.</p>
+<section id="local-beables" class="level2" data-number="19.1">
+<h2 data-number="19.1" class="anchored" data-anchor-id="local-beables"><span class="header-section-number">19.1</span> Local beables</h2>
+<p>John Bell <span class="citation" data-cites="bell2004jumps">(<a href="references.html#ref-bell2004jumps" role="doc-biblioref">Bell 2004a</a>)</span>, uses his concept of local beables <span class="citation" data-cites="bell2004beables">(<a href="references.html#ref-bell2004beables" role="doc-biblioref">Bell 2004b</a>)</span> to propose that theses random events are what give effect to local beables. Bell’s local beables are a significant development as it was a move away from focusing on what is observed to what exists. The locality of the beable, however, is still tied to the observation that particles such as electrons or photons appear locally in experimental situations. <em>Beable</em> also implies a process of coming into being. So, a particle may exist in an interaction or detection but what of the existence of the particle as such? The concept of local beables in general leaves such questions unanswered. The application to GRW will now be considered.</p>
 </section>
-<section id="layered-ontology" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="layered-ontology">Layered ontology</h2>
-<p><img src="./images/layer_ontology.jpg" class="img-fluid"></p>
+<section id="wavefunction-ontology" class="level2" data-number="19.2">
+<h2 data-number="19.2" class="anchored" data-anchor-id="wavefunction-ontology"><span class="header-section-number">19.2</span> Wavefunction ontology</h2>
+<p>In standard quantum physics the wavefunction permits a range of possible events. Of the possible events one happens due to a measurement process. But what happens - what is the physics - when there is no measurement? Ghirardi, Rimini and Weber <span class="citation" data-cites="grw1986">(<a href="references.html#ref-grw1986" role="doc-biblioref">Ghirardi et al. 1986</a>)</span>, (GRW) introduced a supplementary physical effect to standard quantum mechanics that randomly causes the collapse of the wavefunction, creating a way of obtaining macroscopic events from microscopic quantum systems, as will be explained below.</p>
+<p>The GRW mechanism is as follows. Let the initial the wave function be</p>
+<p><span class="math display">\[\psi (t, q_1, q_2, \dots, q_N)\]</span></p>
+<p><span class="math inline">\(t\)</span> is time and <span class="math inline">\(q_1, q_2, \dots, q_N\)</span> are position coordinates. The probability per unit time for a GRW spontaneous collapse event is <span class="math inline">\(N/\tau\)</span>, where <span class="math inline">\(\tau\)</span> is a new constant of nature, chosen to be in the order of <span class="math inline">\(10^{14}\)</span> seconds. The collapsed wavefunction is</p>
+<p><span class="math display">\[\psi' = \frac{j(x - q_n ) \psi(t, \dots)}{R_n (x)},\]</span></p>
+<p>where <span class="math inline">\(q_n\)</span> is chosen at random (probability <span class="math inline">\(=1/N\)</span>)</p>
+<p>The definition of the weighting function <span class="math inline">\(j\)</span> introduces at least one further constant of nature. This is tuned to be in the region of <span class="math inline">\(10^{-5}\)</span>cm to preserve the observed microscopic effects while generating the commonly observed macroscopic world. There is nothing but the wavefunction and the collapse is part of its dynamics.</p>
+<p>However, the GRW collapse events happen to the wavefunction, not something else. The wavefunction is then well localized in ordinary space at, at most, a mesoscopic scale. Each is centred on a particular space-time point <span class="math inline">\((x, t)\)</span>. So, Bell proposes these events as providing the local beables of the theory. This would make the beables appearances of the object (Sosein) not a representation of the object itself (Dasein). That being so, these local beables are sparse events in a system of particles and would be very rare for a small number of particles. That is, in the time scales typical of experiment nothing would happen outside the detector. Entanglement provides the mechanism for the commonly experienced existence of macroscopic bodies such as detectors. Note that the spontaneous event is a reduction of the wavefunction. This leaves open the relationship to the charge, mass and spin carrying particle. In addition, if this spontaneously reduced wavefunction is what exists then its relation to the actual particle still needs explanation. Implicitly there is a return to Born probability mechanism but without clarity on this the ontology is incomplete.</p>
+<section id="distributed-charge-and-mass" class="level3" data-number="19.2.1">
+<h3 data-number="19.2.1" class="anchored" data-anchor-id="distributed-charge-and-mass"><span class="header-section-number">19.2.1</span> Distributed charge and mass</h3>
+<p>An alternative wavefunction ontology, but still within GRW theory, proposes that the particle has only a “fuzzy” position, with “more of it” located in places that correspond to its location in configurations which are assigned high amplitudes by the wave-function. This suggests a picture in which the particle is “smeared out” in space, and the effect of the GRW hit is to concentrate most of the smear within <span class="math inline">\(10^{-5}\)</span>cm of a particular location. In this ontology the charge and mass of an electron would presumably be distributed across the support of the wavefunction. This theory does propose that a particle exists as such and is extended in space. This therefore provides a more complete ontology.</p>
+</section>
+<section id="the-multiverse" class="level3" data-number="19.2.2">
+<h3 data-number="19.2.2" class="anchored" data-anchor-id="the-multiverse"><span class="header-section-number">19.2.2</span> The multiverse</h3>
+<p>A third set of theories are a development of Everett’s relative state formulation of quantum mechanics <span class="citation" data-cites="everett1957">(<a href="references.html#ref-everett1957" role="doc-biblioref">Everett 1957</a>)</span>, that are commonly known as many worlds or multiverse interpretations. In this case just the evolving wavefunction features as the candidate entity. The wave function describes all the possibilities for the system and all possibilities happen. This gives rise to many (an infinity of) physical worlds. <span class="citation" data-cites="wallace2012">Wallace (<a href="references.html#ref-wallace2012" role="doc-biblioref">2012</a>)</span> provides a comprehensive discussion of this set of theories.</p>
+<p>Everett’s criterion for the real existence of a branch is: If the wavefunction <span class="math inline">\(\psi\)</span> of a system is a superposition <span class="math inline">\(a\phi+ b\theta\)</span> then the “branches” <span class="math inline">\(\phi\)</span> and <span class="math inline">\(\theta\)</span> exist, and in each branch, everything physically exists that would exist if that were the entire state of the system. However, there are many ways to represent a function as a linear representation of other functions. Some further structure is required to provide a path to candidates for entities. One approach is an appeal to decoherence, achieved through entanglement. Here the quantity capturing possible states of affairs is <span class="math inline">\(|\psi|^2\)</span> and entanglement can pick out specific decomposition that depends on the physics of the interaction bohmhiley2006 <span class="math display">\[ |\psi |^2 \rightarrow |a\phi|^2+|b\theta|^2\]</span></p>
+<p>That is, there is no interference term. However, the more detailed theory <span class="citation" data-cites="wallace2012">(<a href="references.html#ref-wallace2012" role="doc-biblioref">Wallace 2012</a>)</span> works with approximate decoherence.</p>
+<p>Examining critically the ontology of many worlds, it shares some of the issues with the GRW theory, especially in the Bell beables version. The smeared, or extended particle interpretation is not available to it but a complete theory must show how familiar phenomena emerge.</p>
+<p>A macro-object is a pattern, and the existence of a pattern as a real thing depends on the usefulness–in particular the explanatory power and predictive reliability–of theories which admit that pattern in their ontology.</p>
+<p>What makes a collection of electrons, protons, and neutrons a particle accelerator, rather than something else, has to do with how the microscopic parts are arranged, or structured. A significant part of that structure is the spatial arrangement of the microscopic parts through time. However, a quantum wavefunction contains no microscopic parts localized in space-time, so its behaviour cannot create a macroscopic particle accelerator in anything like the way the behaviour of localized electrons, neutrons, and protons can. The problem remains of how to populate familiar space-time with locally existing entities.</p>
+</section>
+</section>
+<section id="bohmian-ontology" class="level2" data-number="19.3">
+<h2 data-number="19.3" class="anchored" data-anchor-id="bohmian-ontology"><span class="header-section-number">19.3</span> Bohmian ontology</h2>
+<p>Bohmian mechanics <span class="citation" data-cites="bohmhiley2006">(<a href="references.html#ref-bohmhiley2006" role="doc-biblioref">Bohm and Hiley 2006</a>)</span>, <span class="citation" data-cites="durrteufel2009">(<a href="references.html#ref-durrteufel2009" role="doc-biblioref">Dürr and Teufel 2009</a>)</span>, is a formulation of quantum mechanics that is constructed to give the same results as that of standard quantum mechanics but in which particles have continuous trajectories. For a discussion of the theory’s ontology the mathematics of how this is accomplished is not relevant. The ontology includes:</p>
 <ul>
-<li><a href="./Why_critical_ontology.html">Why critical ontology?</a></li>
-<li><a href="./strata.html">Strata of being</a></li>
-<li><a href="./Fields_of_Sense.html">Objects in a Field of Sense</a></li>
-<li><a href="./the-heart-of-matter.html">Ontological Framework: Nicolai Hartmann and Quantum Mechanics</a></li>
-<li><a href="./Hartmann_and_Hayek_A_Comparative_Ontology.html">Hartmann and Hayek: A Comparative Ontology</a></li>
-</ul>
-</section>
-<section id="process-ontology" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="process-ontology">Process ontology</h2>
-<p><img src="./images/process_ont.jpg" class="img-fluid"></p>
+<li>Particles with a well-defined position x(t) which varies continuously and is causally determined.</li>
+<li>A guiding field that is derived from the solution of Schrödinger’s equation, so that it too changes continuously and is causally determined.
 <ul>
-<li><a href="./Taking_Process_Philosophy_Seriously.html">Taking process philosophy seriously</a></li>
+<li>The particle is never separate from this guiding field that fundamentally affects it. There is no dynamics without this field.</li>
+<li>The guiding field is not affected by the particle.</li>
+</ul></li>
 </ul>
+<p>The Bohmian mechanics emphasises that the particle has a continuous trajectory and that these trajectories exist in the physical domain. The particle does not follow the laws of classical dynamics but is guided by a field that is directly derived from the solution to the Schrödinger equation. The claims made about what exists are not made within a wider ontology, but simply posit particles and guiding fIelds. It is tacitly assumed that to exist is to physically exist.</p>
+<p>The distinction has been made between existing in the theory (the ideal sphere) and existing physically (the real sphere). There is a version Bohmian mechanics in which the guiding field is not in the real sphere of the ontology but in the ideal sphere. The guiding field is then a law governing the behaviour of the particle but not a physical entity like the particle. <span class="citation" data-cites="allori2013">Allori (<a href="references.html#ref-allori2013" role="doc-biblioref">2013</a>)</span> presents this as a primitive ontology. Allori claims that a physical theory</p>
+<blockquote class="blockquote">
+<p>… will be about a given primitive ontology: entities living in three-dimensional space or in space-time. They are the fundamental building blocks of everything else, and their histories through time provide a picture of the world according to the theory (the scientific image).</p>
+</blockquote>
+<p>These primitive variables describe what exists in the inorganic layer of the real sphere whereas non-primitive variables exist in the physical theories in the ideal sphere. In a physical situation where no person is active there is no mechanism for the ideal sphere to influence the real sphere. The primitive ontology must therefore include the guiding field so that Bohmian mechanics can operate as a fully-fledged physical theory. However, the wavefunction that gives rise to the guiding field is a function on configuration space, rather than the three-dimensional space of natural phenomena.</p>
 </section>
-<section id="dispositions-and-powers" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="dispositions-and-powers">Dispositions and powers</h2>
-<p><img src="./images/Power_Disp.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./The-ontology-of-dispositions.html">The ontology of dispositions</a></li>
-<li><a href="./Concepts-of-causal-powers.html">Concepts of causal powers</a></li>
-</ul>
-</section>
-<section id="probability-and-potentiality" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="probability-and-potentiality">Probability and potentiality</h2>
-<p><img src="./images/Prot_prob.png" class="img-fluid"></p>
-<ul>
-<li><a href="./Potentiality_and_probability.html">Potentiality and probability</a></li>
-<li><a href="./The-Kolmogorov-probability-axioms-and-objective-chance.html">The Kolmogorov probability axioms and objective chance</a></li>
-<li><a href="./Conditional-probability-Renyi-versus-Kolmogorov.html">Conditional probability: Renyi versus Kolmogorov</a></li>
-</ul>
-</section>
-<section id="physics" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="physics">Physics</h2>
-<p><img src="./images/QM.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./A_Relational_Reconstruction_of_Quantum_Mechanics.html">A relational reconstruction of Quantum Mechanics</a></li>
-<li><a href="./Heisenberg_Potentiality_and_Quantum_Ontology.html">Heisenberg, Potentiality, and Quantum Ontology</a></li>
-<li><a href="./The_double_slit_experiment.html">The double slit experiment</a></li>
-<li><a href="./Locality_and_quantum_mechanics.html">Locality and quantum mechanics</a></li>
-<li><a href="./Comparison-of-quantum-physical-ontologies.html">Comparison of quantum physical ontologies</a></li>
-<li><a href="./Quantum_objects.html">Ontology and the quantum object</a></li>
-<li><a href="./The_combination_of_quantum_objects.html">The combination of quantum objects</a></li>
-<li><a href="./Quantum-chance.html">Quantum chance</a></li>
-<li><a href="./quantum_modal_ontology.html">Modal categories and quantum chance</a></li>
-<li><a href="./Events_Histories_ and_Trees.html">The Quantum Mechanics of Events, Histories and Trees</a></li>
-<li><a href="./Prediction_indeterminacy_and_randomness.html">Prediction, indeterminacy, and randomness</a></li>
-<li><a href="./Events_in_quantum_mechanics.html">Events in quantum mechanics</a></li>
-</ul>
-</section>
-<section id="psychic-level" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="psychic-level">Psychic level</h2>
-<ul>
-<li><a href="./sensory_order.html">Sensory order</a></li>
-</ul>
-</section>
-<section id="spiritual" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="spiritual">Spiritual</h2>
-<ul>
-<li><a href="./Hartmann_and_Hayek.html">Hartmann and Hayek</a></li>
-</ul>
-</section>
-<section id="society" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="society">Society</h2>
-<section id="government" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="government">Government</h3>
-<ul>
-<li><a href="./Ontological_Critiques_of_the_Notion_of_Government.html">Ontological Critiques of the Notion of Government</a></li>
-</ul>
-</section>
-<section id="economics" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="economics">Economics</h3>
+<section id="conclusion" class="level2" data-number="19.4">
+<h2 data-number="19.4" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">19.4</span> Conclusion</h2>
+<p>Critical ontology, as an investigative method, has now been applied to a range of proposals that claim the physical existence of particle or wavefunctions or both. Of these it is Bohmian mechanics, with particles and guiding fields as physical entities, that provides the most near to complete physical ontology.</p>
+<p>A major deficiency in GRW theories is that the ontological status of the spontaneous reduction of the wavefunction. The mathematical description is of a stochastic process but it is not clear what this process is a property of. This will need a discussion of dispositional properties.</p>
 
 
-</section>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-allori2013" class="csl-entry" role="listitem">
+Allori, Valia. 2013. <span>“<span class="nocase">Primitive Ontology and the Structure of Fundamental Physical Theories</span>.”</span> In <em><span class="nocase">The Wave Function: Essays in the Metaphysics of Quantum Mechanics</span></em>, edited by Alyssa Ney and David Z. Albert. Oxford University Press.
+</div>
+<div id="ref-bell2004jumps" class="csl-entry" role="listitem">
+Bell, John S. 2004a. <span>“<span class="nocase">Are there quantum jumps?</span>”</span> In <em><span class="nocase">Speakable and Unspeakable in Quantum Mechanics: Collected Papers on Quantum Philosophy</span></em>, 2nd ed. Cambridge University Press.
+</div>
+<div id="ref-bell2004beables" class="csl-entry" role="listitem">
+Bell, John S. 2004b. <span>“<span class="nocase">The theory of local beables</span>.”</span> In <em><span class="nocase">Speakable and Unspeakable in Quantum Mechanics: Collected Papers on Quantum Philosophy</span></em>, 2nd ed. Cambridge University Press.
+</div>
+<div id="ref-bohmhiley2006" class="csl-entry" role="listitem">
+Bohm, David, and Basil Hiley. 2006. <em><span>The Undivided Universe</span></em>. 1st ed. Taylor; Francis.
+</div>
+<div id="ref-durrteufel2009" class="csl-entry" role="listitem">
+Dürr, Detlef, and Stefan Teufel. 2009. <em><span class="nocase">Bohmian Mechanics: The Physics and Mathematics of Quantum Theory</span></em>. Springer-Verlag.
+</div>
+<div id="ref-everett1957" class="csl-entry" role="listitem">
+Everett, Hugh. 1957. <span>“<span class="nocase"><span>‘Relative State’</span> Formulation of Quantum Mechanics</span>.”</span> <em>Reviews of Modern Physics</em> 29 (3): 454–62.
+</div>
+<div id="ref-grw1986" class="csl-entry" role="listitem">
+Ghirardi, G. C., A. Rimini, and T. Weber. 1986. <span>“<span class="nocase">Unified dynamics for microscopic and macroscopic systems</span>.”</span> <em>Physical Review D</em> 34 (2): 470–91.
+</div>
+<div id="ref-ismael2021" class="csl-entry" role="listitem">
+Ismael, Jenann. 2021. <span>“<span>Quantum Mechanics</span>.”</span> In <em><span class="nocase">The Stanford Encyclopedia of Philosophy</span></em>, Fall 2021, edited by Edward N. Zalta. Metaphysics Research Lab, Stanford University.
+</div>
+<div id="ref-maudlin2019" class="csl-entry" role="listitem">
+Maudlin, Tim. 2019. <em><span class="nocase">Philosophy of Physics: Quantum Theory</span></em>. Princeton University Press.
+</div>
+<div id="ref-wallace2012" class="csl-entry" role="listitem">
+Wallace, David. 2012. <em><span class="nocase">The Emergent Multiverse: Quantum Theory according to the Everett Interpretation</span></em>. Oxford University Press.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -903,13 +954,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./cover.html" class="pagination-link" aria-label="Ontological Investigations">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Ontological Investigations</span></span>
+      <a href="./Locality_and_quantum_mechanics.html" class="pagination-link" aria-label="Locality, Microcausality, and Entanglement">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Locality, Microcausality, and Entanglement</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./about.html" class="pagination-link" aria-label="Preface">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Preface</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./Quantum_objects.html" class="pagination-link" aria-label="Introduction to Physical Ontology">
+        <span class="nav-page-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Introduction to Physical Ontology</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

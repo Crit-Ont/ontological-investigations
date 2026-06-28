@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Ontological Investigations</title>
+<title>30&nbsp; References – Ontological Investigations</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,7 +23,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -33,8 +52,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./about.html" rel="next">
-<link href="./cover.html" rel="prev">
+<link href="./Ontological_Critiques_of_the_Notion_of_Government.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -73,6 +91,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -85,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">End</a></li><li class="breadcrumb-item"><a href="./references.html"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">References</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -118,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
   </div>
 </li>
@@ -361,7 +408,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
+  <a href="./references.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">References</span></span></a>
   </div>
 </li>
@@ -372,33 +419,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface"><strong>Preface</strong></a></li>
-  <li><a href="#layered-ontology" id="toc-layered-ontology" class="nav-link" data-scroll-target="#layered-ontology">Layered ontology</a></li>
-  <li><a href="#process-ontology" id="toc-process-ontology" class="nav-link" data-scroll-target="#process-ontology">Process ontology</a></li>
-  <li><a href="#dispositions-and-powers" id="toc-dispositions-and-powers" class="nav-link" data-scroll-target="#dispositions-and-powers">Dispositions and powers</a></li>
-  <li><a href="#probability-and-potentiality" id="toc-probability-and-potentiality" class="nav-link" data-scroll-target="#probability-and-potentiality">Probability and potentiality</a></li>
-  <li><a href="#physics" id="toc-physics" class="nav-link" data-scroll-target="#physics">Physics</a></li>
-  <li><a href="#psychic-level" id="toc-psychic-level" class="nav-link" data-scroll-target="#psychic-level">Psychic level</a></li>
-  <li><a href="#spiritual" id="toc-spiritual" class="nav-link" data-scroll-target="#spiritual">Spiritual</a></li>
-  <li><a href="#society" id="toc-society" class="nav-link" data-scroll-target="#society">Society</a>
-  <ul class="collapse">
-  <li><a href="#government" id="toc-government" class="nav-link" data-scroll-target="#government">Government</a></li>
-  <li><a href="#economics" id="toc-economics" class="nav-link" data-scroll-target="#economics">Economics</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">End</a></li><li class="breadcrumb-item"><a href="./references.html"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">References</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Ontological Investigations</h1>
+<h1 class="title"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">References</span></h1>
 </div>
 
 
@@ -415,90 +444,332 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>These investigations will be organised in sections and chapters. The structure is that of an online book that is a work in progress.</p>
-<p><em>The assistance of Gemini is acknowledged for the illustrtations and formatting.</em></p>
-<section id="preface" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="preface"><a href="./about.html"><strong>Preface</strong></a></h2>
-</section>
-<section id="layered-ontology" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="layered-ontology">Layered ontology</h2>
-<p><img src="./images/layer_ontology.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./Why_critical_ontology.html">Why critical ontology?</a></li>
-<li><a href="./strata.html">Strata of being</a></li>
-<li><a href="./Fields_of_Sense.html">Objects in a Field of Sense</a></li>
-<li><a href="./the-heart-of-matter.html">Ontological Framework: Nicolai Hartmann and Quantum Mechanics</a></li>
-<li><a href="./Hartmann_and_Hayek_A_Comparative_Ontology.html">Hartmann and Hayek: A Comparative Ontology</a></li>
-</ul>
-</section>
-<section id="process-ontology" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="process-ontology">Process ontology</h2>
-<p><img src="./images/process_ont.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./Taking_Process_Philosophy_Seriously.html">Taking process philosophy seriously</a></li>
-</ul>
-</section>
-<section id="dispositions-and-powers" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="dispositions-and-powers">Dispositions and powers</h2>
-<p><img src="./images/Power_Disp.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./The-ontology-of-dispositions.html">The ontology of dispositions</a></li>
-<li><a href="./Concepts-of-causal-powers.html">Concepts of causal powers</a></li>
-</ul>
-</section>
-<section id="probability-and-potentiality" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="probability-and-potentiality">Probability and potentiality</h2>
-<p><img src="./images/Prot_prob.png" class="img-fluid"></p>
-<ul>
-<li><a href="./Potentiality_and_probability.html">Potentiality and probability</a></li>
-<li><a href="./The-Kolmogorov-probability-axioms-and-objective-chance.html">The Kolmogorov probability axioms and objective chance</a></li>
-<li><a href="./Conditional-probability-Renyi-versus-Kolmogorov.html">Conditional probability: Renyi versus Kolmogorov</a></li>
-</ul>
-</section>
-<section id="physics" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="physics">Physics</h2>
-<p><img src="./images/QM.jpg" class="img-fluid"></p>
-<ul>
-<li><a href="./A_Relational_Reconstruction_of_Quantum_Mechanics.html">A relational reconstruction of Quantum Mechanics</a></li>
-<li><a href="./Heisenberg_Potentiality_and_Quantum_Ontology.html">Heisenberg, Potentiality, and Quantum Ontology</a></li>
-<li><a href="./The_double_slit_experiment.html">The double slit experiment</a></li>
-<li><a href="./Locality_and_quantum_mechanics.html">Locality and quantum mechanics</a></li>
-<li><a href="./Comparison-of-quantum-physical-ontologies.html">Comparison of quantum physical ontologies</a></li>
-<li><a href="./Quantum_objects.html">Ontology and the quantum object</a></li>
-<li><a href="./The_combination_of_quantum_objects.html">The combination of quantum objects</a></li>
-<li><a href="./Quantum-chance.html">Quantum chance</a></li>
-<li><a href="./quantum_modal_ontology.html">Modal categories and quantum chance</a></li>
-<li><a href="./Events_Histories_ and_Trees.html">The Quantum Mechanics of Events, Histories and Trees</a></li>
-<li><a href="./Prediction_indeterminacy_and_randomness.html">Prediction, indeterminacy, and randomness</a></li>
-<li><a href="./Events_in_quantum_mechanics.html">Events in quantum mechanics</a></li>
-</ul>
-</section>
-<section id="psychic-level" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="psychic-level">Psychic level</h2>
-<ul>
-<li><a href="./sensory_order.html">Sensory order</a></li>
-</ul>
-</section>
-<section id="spiritual" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="spiritual">Spiritual</h2>
-<ul>
-<li><a href="./Hartmann_and_Hayek.html">Hartmann and Hayek</a></li>
-</ul>
-</section>
-<section id="society" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="society">Society</h2>
-<section id="government" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="government">Government</h3>
-<ul>
-<li><a href="./Ontological_Critiques_of_the_Notion_of_Government.html">Ontological Critiques of the Notion of Government</a></li>
-</ul>
-</section>
-<section id="economics" class="level3 unnumbered">
-<h3 class="unnumbered anchored" data-anchor-id="economics">Economics</h3>
+<p>The following sources were cited throughout this project:</p>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-allori2013" class="csl-entry" role="listitem">
+Allori, Valia. 2013. <span>“<span class="nocase">Primitive Ontology and
+the Structure of Fundamental Physical Theories</span>.”</span> In
+<em><span class="nocase">The Wave Function: Essays in the Metaphysics of
+Quantum Mechanics</span></em>, edited by Alyssa Ney and David Z. Albert.
+Oxford University Press.
+</div>
+<div id="ref-anderson1983" class="csl-entry" role="listitem">
+Anderson, Benedict. 1983. <em>Imagined Communities: Reflections on the
+Origin and Spread of Nationalism</em>. Verso.
+</div>
+<div id="ref-anjum2018b" class="csl-entry" role="listitem">
+Anjum, Rani Lill, and Stephen Mumford. 2018a. <em>Causation in Science
+and the Methods of Scientific Discovery</em>. Oxford University Press.
+</div>
+<div id="ref-anjum2018" class="csl-entry" role="listitem">
+Anjum, Rani Lill, and Stephen Mumford. 2018b. <em>What Tends to Be: The
+Philosophy of Dispositional Modality</em>. Routledge.
+</div>
+<div id="ref-aristotleMetaphysics" class="csl-entry" role="listitem">
+Aristotle. n.d. <em>Metaphysics <span class="math inline"><em>θ</em></span></em>.
+</div>
+<div id="ref-armstrong2005" class="csl-entry" role="listitem">
+Armstrong, D. M. 2005. <span>“Four Disputes about Properties.”</span>
+<em>Synthese</em> 144 (3): 309–20.
+</div>
+<div id="ref-bell2004jumps" class="csl-entry" role="listitem">
+Bell, John S. 2004a. <span>“<span class="nocase">Are there quantum
+jumps?</span>”</span> In <em><span class="nocase">Speakable and
+Unspeakable in Quantum Mechanics: Collected Papers on Quantum
+Philosophy</span></em>, 2nd ed. Cambridge University Press.
+</div>
+<div id="ref-bell2004beables" class="csl-entry" role="listitem">
+Bell, John S. 2004b. <span>“<span class="nocase">The theory of local
+beables</span>.”</span> In <em><span class="nocase">Speakable and
+Unspeakable in Quantum Mechanics: Collected Papers on Quantum
+Philosophy</span></em>, 2nd ed. Cambridge University Press.
+</div>
+<div id="ref-bird2007" class="csl-entry" role="listitem">
+Bird, Alexander. 2007. <em>Nature’s Metaphysics: Laws and
+Properties</em>. Oxford University Press.
+</div>
+<div id="ref-bohm1951" class="csl-entry" role="listitem">
+Bohm, David. 1951. <em>Quantum Theory</em>. Prentice-Hall.
+</div>
+<div id="ref-bohmhiley2006" class="csl-entry" role="listitem">
+Bohm, David, and Basil Hiley. 2006. <em><span>The Undivided
+Universe</span></em>. 1st ed. Taylor; Francis.
+</div>
+<div id="ref-bricmont2017" class="csl-entry" role="listitem">
+Bricmont, Jean. 2017. <em>Quantum Sense and Nonsense</em>. Springer
+Nature.
+</div>
+<div id="ref-butler2015" class="csl-entry" role="listitem">
+Butler, Judith. 2015. <em>Notes Toward a Performative Theory of
+Assembly</em>. Harvard University Press.
+</div>
+<div id="ref-cartwright2007" class="csl-entry" role="listitem">
+Cartwright, Nancy. 2007. <em>Hunting Causes and Using Them: Approaches
+in Philosophy and Economics</em>. Cambridge University Press.
+</div>
+<div id="ref-cicovacki2014" class="csl-entry" role="listitem">
+Cicovacki, Predrag. 2014. <em>The Analysis of Wonder: An Introduction to
+the Philosophy of Nicolai Hartmann</em>. Bloomsbury.
+</div>
+<div id="ref-durrteufel2009" class="csl-entry" role="listitem">
+Dürr, Detlef, and Stefan Teufel. 2009. <em><span class="nocase">Bohmian
+Mechanics: The Physics and Mathematics of Quantum Theory</span></em>.
+Springer-Verlag.
+</div>
+<div id="ref-egg2014primitive" class="csl-entry" role="listitem">
+Egg, Matthias, and Michael Esfeld. 2014. <span>“<span class="nocase">Primitive ontology and quantum state in the GRW matter
+density theory</span>.”</span> <em>Synthese</em> 192 (10): 3229–45. <a href="https://doi.org/10.1007/s11229-014-0590-3">https://doi.org/10.1007/s11229-014-0590-3</a>.
+</div>
+<div id="ref-epperson2004" class="csl-entry" role="listitem">
+Epperson, Michael. 2004. <em>Quantum Mechanics and the Philosophy of
+Alfred North Whitehead</em>. Fordham University Press.
+</div>
+<div id="ref-esfeld2017" class="csl-entry" role="listitem">
+Esfeld, Michael, and Daniel-André Deckert. 2017. <em>A Minimalist
+Ontology of the Natural World</em>. 1st ed. Routledge.
+</div>
+<div id="ref-everett1957" class="csl-entry" role="listitem">
+Everett, Hugh. 1957. <span>“<span class="nocase"><span>‘Relative
+State’</span> Formulation of Quantum Mechanics</span>.”</span>
+<em>Reviews of Modern Physics</em> 29 (3): 454–62.
+</div>
+<div id="ref-faddeev2000lectures" class="csl-entry" role="listitem">
+Faddeev, Ludvig D., and Oleg A. Yakubovskii. 2000. <em>Lectures on
+Quantum Mechanics for Mathematics Students</em>. American Mathematical
+Society.
+</div>
+<div id="ref-foucault2007" class="csl-entry" role="listitem">
+Foucault, Michel. 2007. <em>Security, Territory, Population: Lectures at
+the Coll<span>è</span>ge de France, 1977–1978</em>. Edited by Michel
+Senellart. Palgrave Macmillan.
+</div>
+<div id="ref-frege1962" class="csl-entry" role="listitem">
+Frege, Gottlob. 1962. <em>Funktion, Begriff, Bedeutung: Fünf Logische
+Studien</em>. Edited by Günther Patzig. Hubert &amp; Co.
+</div>
+<div id="ref-frohlich2021relativistic" class="csl-entry" role="listitem">
+Fröhlich, Jürg. 2021. <span>“Relativistic Quantum Theory.”</span> In
+<em>Do Wave Functions Jump?</em>, edited by Valia Allori, Angelo Bassi,
+Detlef Dürr, and Nino Zanghı̀, vol. 198. Fundamental Theories of Physics.
+Springer, Cham. <a href="https://doi.org/10.1007/978-3-030-46777-7_19">https://doi.org/10.1007/978-3-030-46777-7_19</a>.
+</div>
+<div id="ref-froehlich2023" class="csl-entry" role="listitem">
+Fröhlich, Jürg. 2023. <span>“On the Foundations of Quantum Mechanics and
+the ETH Framework.”</span> <em>Journal of Statistical Physics</em> 190
+(4): 72.
+</div>
+<div id="ref-gabriel2015" class="csl-entry" role="listitem">
+Gabriel, Markus. 2015. <em>Fields of Sense: A New Realist Ontology</em>.
+Edinburgh University Press.
+</div>
+<div id="ref-gerlach1922richtungsquantelung" class="csl-entry" role="listitem">
+Gerlach, Walter, and Otto Stern. 1922. <span>“Der Experimentelle
+Nachweis Der Richtungsquantelung Im Magnetfeld.”</span> <em>Zeitschrift
+f<span>ü</span>r Physik</em>, 349–52.
+</div>
+<div id="ref-grw1986" class="csl-entry" role="listitem">
+Ghirardi, G. C., A. Rimini, and T. Weber. 1986. <span>“<span class="nocase">Unified dynamics for microscopic and macroscopic
+systems</span>.”</span> <em>Physical Review D</em> 34 (2): 470–91.
+</div>
+<div id="ref-Gleason1957" class="csl-entry" role="listitem">
+Gleason, Andrew M. 1957. <span>“Measures on the Closed Subspaces of a
+Hilbert Space.”</span> <em>Journal of Mathematics and Mechanics</em> 6
+(6): 885–93.
+</div>
+<div id="ref-groff2021" class="csl-entry" role="listitem">
+Groff, Ruth Porter. 2021. <span>“Conceptualizing Causal Powers:
+Activity, Capacity, Essence, Necessitation.”</span> <em>Synthese</em>
+199: 9881–96. <a href="https://doi.org/10.1007/s11229-021-03229-x">https://doi.org/10.1007/s11229-021-03229-x</a>.
+</div>
+<div id="ref-haag1996" class="csl-entry" role="listitem">
+Haag, Rudolf. 1996. <em>Local Quantum Physics: Fields, Particles,
+Algebras</em>. Second Revised and Enlarged Edition. Springer-Verlag.
+</div>
+<div id="ref-hall2013" class="csl-entry" role="listitem">
+Hall, Brian C. 2013. <em>Quantum Theory for Mathematicians</em>.
+Springer.
+</div>
+<div id="ref-hartmann1924" class="csl-entry" role="listitem">
+Hartmann, Nicolai. 1924. <span>“Wie Ist Kritische Ontologie Überhaupt
+Möglich? Ein Kapitel Zur Grundlegung Der Allgemeinen
+Kategorienlehre.”</span> In <em>Festschrift Für Paul Natorp. Zum
+Siebzigsten Geburtstage von Schülern Und Freunden Gewidmet</em>.
+</div>
+<div id="ref-hartmann1937" class="csl-entry" role="listitem">
+Hartmann, Nicolai. 1937. <em>Möglichkeit Und Wirklichkeit</em>. 3rd ed.
+De Gruyter.
+</div>
+<div id="ref-hartmann1939" class="csl-entry" role="listitem">
+Hartmann, Nicolai. 1939. <em>Der Aufbau Der Realen Welt</em>. 3rd ed. De
+Gruyter.
+</div>
+<div id="ref-Hartmann1935Aufbau" class="csl-entry" role="listitem">
+Hartmann, Nicolai. 1940. <em>Der Aufbau Der Realen Welt:
+Grundri<span>ß</span> Der Allgemeinen Kategorienlehre</em>. Walter de
+Gruyter.
+</div>
+<div id="ref-hartmann1948" class="csl-entry" role="listitem">
+Hartmann, Nicolai. 1948. <em>Zur Grundlegung Der Ontologie</em>. 4th ed.
+De Gruyter.
+</div>
+<div id="ref-hartmann1949b" class="csl-entry" role="listitem">
+Hartmann, Nicolai. 1949a. <em>Neue Wege Der Ontologie</em>. 3rd ed. W.
+Kohlhammer.
+</div>
+<div id="ref-hartmann1949a" class="csl-entry" role="listitem">
+Hartmann, Nicolai. 1949b. <em>Philosophie Der Natur</em>. 2nd ed. De
+Gruyter.
+</div>
+<div id="ref-Hartmann1949NewWays" class="csl-entry" role="listitem">
+Hartmann, Nicolai. 1953. <em>New Ways of Ontology</em>. University of
+Chicago Press.
+</div>
+<div id="ref-Hayek1952SensoryOrder" class="csl-entry" role="listitem">
+Hayek, F. A. 1952. <em>The Sensory Order: An Inquiry into the
+Foundations of Theoretical Psychology</em>. Routledge &amp; Kegan Paul.
+</div>
+<div id="ref-Hayek1967Studies" class="csl-entry" role="listitem">
+Hayek, F. A. 1967. <em>Studies in Philosophy, Politics and
+Economics</em>. Routledge &amp; Kegan Paul.
+</div>
+<div id="ref-Hayek1973LLL1" class="csl-entry" role="listitem">
+Hayek, F. A. 1973. <em>Law, Legislation and Liberty, Volume 1: Rules and
+Order</em>. Routledge &amp; Kegan Paul.
+</div>
+<div id="ref-hayek1948" class="csl-entry" role="listitem">
+Hayek, Friedrich A. 1948. <em>Individualism and Economic Order</em>.
+University of Chicago Press.
+</div>
+<div id="ref-heisenberg1958physics" class="csl-entry" role="listitem">
+Heisenberg, Werner. 1958. <em>Physics and Philosophy: The Revolution in
+Modern Science</em>. Harper &amp; Row.
+</div>
+<div id="ref-huemer2013" class="csl-entry" role="listitem">
+Huemer, Michael. 2013. <em>The Problem of Political Authority: An
+Examination of the Right to Coerce and the Duty to Obey</em>. Palgrave
+Macmillan.
+</div>
+<div id="ref-humphreys1985" class="csl-entry" role="listitem">
+Humphreys, Paul. 1985. <span>“Why Propensities Cannot Be
+Probabilities.”</span> <em>The Philosophical Review</em> 94 (4): 557–70.
+</div>
+<div id="ref-ismael2021" class="csl-entry" role="listitem">
+Ismael, Jenann. 2021. <span>“<span>Quantum Mechanics</span>.”</span> In
+<em><span class="nocase">The Stanford Encyclopedia of
+Philosophy</span></em>, Fall 2021, edited by Edward N. Zalta.
+Metaphysics Research Lab, Stanford University.
+</div>
+<div id="ref-kastner2022transactional" class="csl-entry" role="listitem">
+Kastner, Ruth E. 2022. <em>The Transactional Interpretation of Quantum
+Mechanics: A Relativistic Treatment</em>. 2nd ed. Cambridge University
+Press.
+</div>
+<div id="ref-kastner2018" class="csl-entry" role="listitem">
+Kastner, Ruth E., Stuart Kauffman, and Michael Epperson. 2018.
+<span>“Taking Heisenberg’s Potentia Seriously.”</span> <em>International
+Journal of Quantum Foundations</em> 4 (2): 158–72.
+</div>
+<div id="ref-kochen2015reconstruction" class="csl-entry" role="listitem">
+Kochen, Simon. 2015. <span>“A Reconstruction of Quantum
+Mechanics.”</span> <em>arXiv Preprint arXiv:1506.02154</em>. <a href="https://arxiv.org/abs/1506.02154">https://arxiv.org/abs/1506.02154</a>.
+</div>
+<div id="ref-kochen1967" class="csl-entry" role="listitem">
+Kochen, Simon, and Ernst P. Specker. 1967. <span>“The Problem of Hidden
+Variables in Quantum Mechanics.”</span> <em>Journal of Mathematics and
+Mechanics</em> 17: 59.
+</div>
+<div id="ref-kolmogorov2018" class="csl-entry" role="listitem">
+Kolmogorov, Andrey Nikolaevich. 2018. <em>Foundations of the Theory of
+Probability</em>. Dover Publications.
+</div>
+<div id="ref-latour2005" class="csl-entry" role="listitem">
+Latour, Bruno. 2005. <em>Reassembling the Social: An Introduction to
+Actor-Network-Theory</em>. Oxford University Press.
+</div>
+<div id="ref-Lewis2017HayekOntology" class="csl-entry" role="listitem">
+Lewis, Paul A. 2017. <span>“Ontology and the History of Economic
+Thought: The Case of Anti-Reductionism in the Work of Friedrich
+Hayek.”</span> <em>Cambridge Journal of Economics</em> 41 (6): 1527–47.
+</div>
+<div id="ref-Luders1951" class="csl-entry" role="listitem">
+Lüders, Gerhardt. 1951. <span>“<span>Ü</span>ber Die
+Zustands<span>ä</span>nderung Durch Den Messprozess.”</span> <em>Annalen
+Der Physik</em> 443 (5–8): 322–28. <a href="https://doi.org/10.1002/andp.19514430510">https://doi.org/10.1002/andp.19514430510</a>.
+</div>
+<div id="ref-maudlin2019" class="csl-entry" role="listitem">
+Maudlin, Tim. 2019. <em><span class="nocase">Philosophy of Physics:
+Quantum Theory</span></em>. Princeton University Press.
+</div>
+<div id="ref-mumford2011" class="csl-entry" role="listitem">
+Mumford, Stephen. 2011. <span>“Dispositions.”</span> In <em>Routledge
+Encyclopedia of Philosophy</em>. Routledge.
+</div>
+<div id="ref-vonneumann1932" class="csl-entry" role="listitem">
+Neumann, John von. 1932. <em><span class="nocase">Mathematische
+Grundlagen der Quantenmechanik</span></em>. Springer.
+</div>
+<div id="ref-Popper1972" class="csl-entry" role="listitem">
+Popper, Karl R. 1972. <em>Objective Knowledge</em>. Oxford: Clarendon
+Press.
+</div>
+<div id="ref-popper1967" class="csl-entry" role="listitem">
+Popper, Karl R. 1967. <span>“Quantum Mechanics Without <span>‘the
+Observer’</span>.”</span> In <em>Quantum Theory and Reality</em>, edited
+by Mario Bunge. Springer-Verlag.
+</div>
+<div id="ref-popper1982" class="csl-entry" role="listitem">
+Popper, Karl R. 1982. <em>Quantum Theory and the Schism in Physics</em>.
+Unwin Hyman Ltd.
+</div>
+<div id="ref-popper1990" class="csl-entry" role="listitem">
+Popper, Karl R. 1990. <em>A World of Propensities</em>. Thales.
+</div>
+<div id="ref-renyi1969" class="csl-entry" role="listitem">
+Rényi, Alfred. 1969. <em>Foundations of Probability</em>. Holden-Day.
+</div>
+<div id="ref-searle1995" class="csl-entry" role="listitem">
+Searle, John R. 1995. <em>The Construction of Social Reality</em>. Free
+Press.
+</div>
+<div id="ref-simmons1979" class="csl-entry" role="listitem">
+Simmons, A. John. 1979. <em>Moral Principles and Political
+Obligations</em>. Princeton University Press.
+</div>
+<div id="ref-stirner1844" class="csl-entry" role="listitem">
+Stirner, Max. 1844. <em>The Ego and Its Own</em>. Reclam / Dover
+Publications.
+</div>
+<div id="ref-suarez2021" class="csl-entry" role="listitem">
+Suárez, Mauricio. 2021. <em>Philosophy of Probability and Statistical
+Modelling</em>. Cambridge University Press.
+</div>
+<div id="ref-thirring1979course" class="csl-entry" role="listitem">
+Thirring, Walter. 1979. <em>A Course in Mathematical Physics 3: Quantum
+Mechanics of Atoms and Molecules</em>. Springer-Verlag.
+</div>
+<div id="ref-tilly1992" class="csl-entry" role="listitem">
+Tilly, Charles. 1992. <em>Coercion, Capital, and European States, AD
+990–1992</em>. Blackwell.
+</div>
+<div id="ref-vetter2015" class="csl-entry" role="listitem">
+Vetter, Barbara. 2015. <em>Potentiality: From Dispositions to
+Modality</em>. Oxford University Press.
+</div>
+<div id="ref-wallace2012" class="csl-entry" role="listitem">
+Wallace, David. 2012. <em><span class="nocase">The Emergent Multiverse:
+Quantum Theory according to the Everett Interpretation</span></em>.
+Oxford University Press.
+</div>
+<div id="ref-whitehead2010" class="csl-entry" role="listitem">
+Whitehead, Alfred North. 2010. <em>Process and Reality</em>. Corrected
+edition. Simon; Schuster.
+</div>
+<div id="ref-wolff1970" class="csl-entry" role="listitem">
+Wolff, Robert Paul. 1970. <em>In Defense of Anarchism</em>. Harper; Row.
+</div>
+</div>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -903,14 +1174,11 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./cover.html" class="pagination-link" aria-label="Ontological Investigations">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Ontological Investigations</span></span>
+      <a href="./Ontological_Critiques_of_the_Notion_of_Government.html" class="pagination-link" aria-label="Ontological Critiques of the Notion of Government">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Ontological Critiques of the Notion of Government</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./about.html" class="pagination-link" aria-label="Preface">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Preface</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

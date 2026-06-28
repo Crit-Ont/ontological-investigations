@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>The Kolmogorov probability axioms and objective chance – Ontological Investigations</title>
+<title>13&nbsp; The Kolmogorov probability axioms and objective chance – Ontological Investigations</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -45,29 +45,31 @@ div.csl-indent {
 }</style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-a0f9fd0d421825b736dc1bbcbcba2219.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./Conditional-probability-Renyi-versus-Kolmogorov.html" rel="next">
+<link href="./Potentiality_and_probability.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-9e3e5b9121e68b3f077afb32f2c64d95.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -120,68 +122,327 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../custom.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar floating quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Ontological Investigations</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
-<span class="menu-text">About this site</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Potentiality_and_probability.html">Probability and potentiality</a></li><li class="breadcrumb-item"><a href="./The-Kolmogorov-probability-axioms-and-objective-chance.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">The Kolmogorov probability axioms and objective chance</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Ontological Investigations</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cover.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Ontological Investigations</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Overview</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Preface</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Foundation</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Why_critical_ontology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Why a critical ontology?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./strata.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Strata of being</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Fields_of_Sense.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Objects in a Field of Sense</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./the-heart-of-matter.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Ontological Framework: Nicolai Hartmann and Quantum Mechanics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Hartmann_and_Hayek_A_Comparative_Ontology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Hartmann and Hayek: A Comparative Ontology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Taking_Process_Philosophy_Seriously.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Taking process philosophy seriously</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Dispositions and powers</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./The-ontology-of-dispositions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">The ontology of dispositions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Concepts-of-causal-powers.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Concepts of causal powers</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Probability and potentiality</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Potentiality_and_probability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Potentiality and Probability</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./The-Kolmogorov-probability-axioms-and-objective-chance.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">The Kolmogorov probability axioms and objective chance</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Conditional-probability-Renyi-versus-Kolmogorov.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Conditional probability: Renyi versus Kolmogorov</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Physical layer</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./A_Relational_Reconstruction_of_Quantum_Mechanics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">A Relational Reconstruction of Quantum Mechanics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Heisenberg_Potentiality_and_Quantum_Ontology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Heisenberg, Potentiality, and Quantum Ontology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./The_double_slit_experiment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">The double slit experiment</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Locality_and_quantum_mechanics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Locality, Microcausality, and Entanglement</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Comparison-of-quantum-physical-ontologies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">Comparison of quantum physical ontologies</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Quantum_objects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">20</span>&nbsp; <span class="chapter-title">Introduction to Physical Ontology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./The_combination_of_quantum_objects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">21</span>&nbsp; <span class="chapter-title">The Combination of Quantum Objects</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Quantum-chance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">22</span>&nbsp; <span class="chapter-title">Quantum chance</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./quantum_modal_ontology.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">23</span>&nbsp; <span class="chapter-title">Modal categories and quantum chance</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Events_Histories_ and_Trees.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">24</span>&nbsp; <span class="chapter-title">The Quantum Mechanics of Events, Histories and Trees</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Prediction_indeterminacy_and_randomness.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">25</span>&nbsp; <span class="chapter-title">The Impossibility of Prediction and Quantum Indeterminacy</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Events_in_quantum_mechanics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">26</span>&nbsp; <span class="chapter-title">Events in quantum mechanics: a simple proposal</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Psychic layer</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./sensory_order.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">27</span>&nbsp; <span class="chapter-title">Sensory order</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Hartmann_and_Hayek.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">28</span>&nbsp; <span class="chapter-title">Hartmann and Hayek on layered reality</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Spiritual layer</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Ontological_Critiques_of_the_Notion_of_Government.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">29</span>&nbsp; <span class="chapter-title">Ontological Critiques of the Notion of Government</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">End</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">30</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#subjective-vs.-objective-probability" id="toc-subjective-vs.-objective-probability" class="nav-link active" data-scroll-target="#subjective-vs.-objective-probability">Subjective vs.&nbsp;Objective Probability</a></li>
-  <li><a href="#the-suárez-formulation" id="toc-the-suárez-formulation" class="nav-link" data-scroll-target="#the-suárez-formulation">The Suárez Formulation</a></li>
-  <li><a href="#the-kolmogorov-formulation" id="toc-the-kolmogorov-formulation" class="nav-link" data-scroll-target="#the-kolmogorov-formulation">The Kolmogorov Formulation</a>
+  <li><a href="#subjective-vs.-objective-probability" id="toc-subjective-vs.-objective-probability" class="nav-link active" data-scroll-target="#subjective-vs.-objective-probability"><span class="header-section-number">13.1</span> Subjective vs.&nbsp;Objective Probability</a></li>
+  <li><a href="#the-suárez-formulation" id="toc-the-suárez-formulation" class="nav-link" data-scroll-target="#the-suárez-formulation"><span class="header-section-number">13.2</span> The Suárez Formulation</a></li>
+  <li><a href="#the-kolmogorov-formulation" id="toc-the-kolmogorov-formulation" class="nav-link" data-scroll-target="#the-kolmogorov-formulation"><span class="header-section-number">13.3</span> The Kolmogorov Formulation</a>
   <ul class="collapse">
-  <li><a href="#mapping-logic-to-set-theory" id="toc-mapping-logic-to-set-theory" class="nav-link" data-scroll-target="#mapping-logic-to-set-theory">Mapping Logic to Set Theory</a></li>
+  <li><a href="#mapping-logic-to-set-theory" id="toc-mapping-logic-to-set-theory" class="nav-link" data-scroll-target="#mapping-logic-to-set-theory"><span class="header-section-number">13.3.1</span> Mapping Logic to Set Theory</a></li>
   </ul></li>
-  <li><a href="#a-reformulated-neutral-axiom-set" id="toc-a-reformulated-neutral-axiom-set" class="nav-link" data-scroll-target="#a-reformulated-neutral-axiom-set">A Reformulated Neutral Axiom Set</a></li>
-  <li><a href="#applications-the-die-and-the-electron" id="toc-applications-the-die-and-the-electron" class="nav-link" data-scroll-target="#applications-the-die-and-the-electron">Applications: The Die and the Electron</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#a-reformulated-neutral-axiom-set" id="toc-a-reformulated-neutral-axiom-set" class="nav-link" data-scroll-target="#a-reformulated-neutral-axiom-set"><span class="header-section-number">13.4</span> A Reformulated Neutral Axiom Set</a></li>
+  <li><a href="#applications-the-die-and-the-electron" id="toc-applications-the-die-and-the-electron" class="nav-link" data-scroll-target="#applications-the-die-and-the-electron"><span class="header-section-number">13.5</span> Applications: The Die and the Electron</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">13.6</span> Conclusion</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Potentiality_and_probability.html">Probability and potentiality</a></li><li class="breadcrumb-item"><a href="./The-Kolmogorov-probability-axioms-and-objective-chance.html"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">The Kolmogorov probability axioms and objective chance</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">The Kolmogorov probability axioms and objective chance</h1>
+<h1 class="title"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">The Kolmogorov probability axioms and objective chance</span></h1>
 </div>
 
 
@@ -198,16 +459,15 @@ window.Quarto = {
 </header>
 
 
-<p><em>Philosophy of Probability and Statistical Modelling</em> by Mauricio Suárez <span class="citation" data-cites="suarez2021">(<a href="#ref-suarez2021" role="doc-biblioref">Suárez 2021</a>)</span> provides a historical overview of the philosophy of probability and argues for the significance of this philosophy for well-founded statistical modelling. Within this wider scope, the book discusses the themes: objective probability, propensities, and measurements. So, it has much in common with the themes of this investitgation.</p>
+<p><em>Philosophy of Probability and Statistical Modelling</em> by Mauricio Suárez <span class="citation" data-cites="suarez2021">(<a href="references.html#ref-suarez2021" role="doc-biblioref">Suárez 2021</a>)</span> provides a historical overview of the philosophy of probability and argues for the significance of this philosophy for well-founded statistical modelling. Within this wider scope, the book discusses the themes: objective probability, propensities, and measurements. So, it has much in common with the themes of this investitgation.</p>
 <p>Suárez defends a model of objective probability that disentangles propensity from single-case chance and the observed sequences of outputs that result in relative frequencies of outcomes. This is close to what I argued for in <em>Potentiality and Probability</em>, but there are differences that I will return to in a future chapter.</p>
-<section id="subjective-vs.-objective-probability" class="level1">
-<h1>Subjective vs.&nbsp;Objective Probability</h1>
+<section id="subjective-vs.-objective-probability" class="level2" data-number="13.1">
+<h2 data-number="13.1" class="anchored" data-anchor-id="subjective-vs.-objective-probability"><span class="header-section-number">13.1</span> Subjective vs.&nbsp;Objective Probability</h2>
 <p>Suárez’s main theme is objective probability, but he expends a lot of effort on examining subjective probabilities. I have no doubt that subjective probability has its place alongside objective probability but an <em>ad hoc</em> mixture of the two is to be avoided.</p>
 <p>Subjective probability has been zealously defended by de Finetti and Jaynes to the point of them attempting to eliminate objective probability altogether. I believe, however, the chapters of this investitgation make a case for objective probability as an aspect of ontology. In this chapter I will focus on the Kolmogorov axioms of probability. Curiously, it is only in examining subjective probability that Suárez discusses the axioms of probability.</p>
-<hr>
 </section>
-<section id="the-suárez-formulation" class="level1">
-<h1>The Suárez Formulation</h1>
+<section id="the-suárez-formulation" class="level2" data-number="13.2">
+<h2 data-number="13.2" class="anchored" data-anchor-id="the-suárez-formulation"><span class="header-section-number">13.2</span> The Suárez Formulation</h2>
 <p>The axioms that Suárez states are as follows. Let <span class="math inline">\(\{E_1, E_2, \dots, E_n\}\)</span> be the set of events over which an agent’s degrees of belief range; and let <span class="math inline">\(\Omega\)</span> be an event which occurs necessarily. The axioms of probability may be expressed as follows:</p>
 <p><strong>Axiom 1:</strong> <span class="math inline">\(0 \le P (E) \le 1\)</span>, for any <span class="math inline">\(E\)</span>: In other words, all probabilities lie in the real unit number interval.</p>
 <p><strong>Axiom 2:</strong> <span class="math inline">\(P (\Omega) =1\)</span>: The tautologous proposition, or the necessary event has probability one.</p>
@@ -216,9 +476,9 @@ window.Quarto = {
 <p>According to Suárez, the Kolmogorov axioms are essentially equivalent to those above.</p>
 <hr>
 </section>
-<section id="the-kolmogorov-formulation" class="level1">
-<h1>The Kolmogorov Formulation</h1>
-<p>Nathan Morrison has translated the Kolmogorov axioms <span class="citation" data-cites="kolmogorov2018">(<a href="#ref-kolmogorov2018" role="doc-biblioref">Kolmogorov 2018</a>)</span> as:</p>
+<section id="the-kolmogorov-formulation" class="level2" data-number="13.3">
+<h2 data-number="13.3" class="anchored" data-anchor-id="the-kolmogorov-formulation"><span class="header-section-number">13.3</span> The Kolmogorov Formulation</h2>
+<p>Nathan Morrison has translated the Kolmogorov axioms <span class="citation" data-cites="kolmogorov2018">(<a href="references.html#ref-kolmogorov2018" role="doc-biblioref">Kolmogorov 2018</a>)</span> as:</p>
 <p>Let <span class="math inline">\(E\)</span> be a collection of elements <span class="math inline">\(\xi, \eta, \zeta, \dots\)</span>, which we shall call elementary events, and <span class="math inline">\(\mathfrak{F}\)</span> a set of subsets of <span class="math inline">\(E\)</span>; the elements of the set <span class="math inline">\(\mathfrak{F}\)</span> will be called random events.</p>
 <blockquote class="blockquote">
 <p><strong>I.</strong> <span class="math inline">\(\mathfrak{F}\)</span> is a field of sets.</p>
@@ -239,8 +499,8 @@ window.Quarto = {
 <p>It is also important to note that <span class="math inline">\(\xi, \eta, \zeta, \dots\)</span>, indicating the elements of <span class="math inline">\(E\)</span> does not constrain the set of elementary events to be a countable set. This is important for applications to statistical and quantum physics where, for example, particle positions and momentum can take a continuum of values.</p>
 <p>It is a shorthand when Kolmogorov writes in Axiom III that the number <span class="math inline">\(P(A)\)</span> is the probability of the event <span class="math inline">\(A\)</span>. The full interpretation is that <span class="math inline">\(P(A)\)</span> is the probability that the outcome will be an element in <span class="math inline">\(A\)</span>. In the same Axiom III, the use of the term “assigned” is also deceptive. The probabilities are more properly assigned to the singleton set with each element of <span class="math inline">\(E\)</span> as the sole member and from that the probability for each set in <span class="math inline">\(\mathfrak{F}\)</span> is constructed.</p>
 <hr>
-<section id="mapping-logic-to-set-theory" class="level2">
-<h2 class="anchored" data-anchor-id="mapping-logic-to-set-theory">Mapping Logic to Set Theory</h2>
+<section id="mapping-logic-to-set-theory" class="level3" data-number="13.3.1">
+<h3 data-number="13.3.1" class="anchored" data-anchor-id="mapping-logic-to-set-theory"><span class="header-section-number">13.3.1</span> Mapping Logic to Set Theory</h3>
 <p>As Suárez is dealing with probabilities as credences (degrees of belief) in this section of his book, it would have been better to consistently employ the language and symbols of propositional logic.To maintain consistency, especially when dealing with credences, we can map the language of propositional logic to set theory:</p>
 <table class="caption-top table">
 <thead>
@@ -276,8 +536,8 @@ window.Quarto = {
 <hr>
 </section>
 </section>
-<section id="a-reformulated-neutral-axiom-set" class="level1">
-<h1>A Reformulated Neutral Axiom Set</h1>
+<section id="a-reformulated-neutral-axiom-set" class="level2" data-number="13.4">
+<h2 data-number="13.4" class="anchored" data-anchor-id="a-reformulated-neutral-axiom-set"><span class="header-section-number">13.4</span> A Reformulated Neutral Axiom Set</h2>
 <p>I propose that this is a neutral set of axioms for a probability theory. It has one advantage that it can be applied to eventless situations such as in the quantum description of a free particle.</p>
 <p>Let <span class="math inline">\(E\)</span> be a collection of elements <span class="math inline">\(\xi, \eta, \zeta, \dots\)</span>, which we shall call <strong>elementary possibilities</strong> and <span class="math inline">\(\mathfrak{F}\)</span> a set of subsets of <span class="math inline">\(E\)</span>.</p>
 <p><strong>I.</strong> <span class="math inline">\(\mathfrak{F}\)</span> is a field of sets.</p>
@@ -289,29 +549,29 @@ window.Quarto = {
 <p>Such a system of sets <span class="math inline">\(\mathfrak{F}, E\)</span>, together with a definite assignment of numbers <span class="math inline">\(P(A)\)</span> for all <span class="math inline">\(A \in \mathfrak{F}\)</span>, satisfying Axioms I-V, is called a <strong>probability space</strong>.</p>
 <hr>
 </section>
-<section id="applications-the-die-and-the-electron" class="level1">
-<h1>Applications: The Die and the Electron</h1>
+<section id="applications-the-die-and-the-electron" class="level2" data-number="13.5">
+<h2 data-number="13.5" class="anchored" data-anchor-id="applications-the-die-and-the-electron"><span class="header-section-number">13.5</span> Applications: The Die and the Electron</h2>
 <p>In adopting these axioms for objective chance, the collection of elements can again be called elementary events or possible events, and <span class="math inline">\(P\)</span> is a numerical assignment furnished by a theory or estimated through experiment.</p>
 <p><strong>The Die Example:</strong> A simple physical example is provided by a die with six sides. These six possibilities are the elementary events <span class="math inline">\(E\)</span>. These outcomes are not in <span class="math inline">\(\mathfrak{F}\)</span>, the set of subsets of <span class="math inline">\(E\)</span> that Kolmogorov calls events. For example, the outcome “face 5 faces upwards” is not in the set of random events but the subset {“face 5 faces upwards”} is.</p>
 <p><span class="math inline">\(P(\{\text{face 5 faces upwards}\})\)</span> can be estimated as the proportion of times it occurs in a long run of repetitions. I emphasize that this is not a relative frequency interpretation; here the relative frequencies are an estimate of the numerical probability assignment. <span class="math inline">\(P(\{\text{face 5 faces upwards}\})\)</span> itself is the relative strength of the tendency for that event to occur, otherwise known as the <strong>single-case chance</strong>.</p>
 <p><strong>The Quantum Example:</strong> An example is the case of an observation of an electron governed by the Schrödinger equation. According to quantum mechanics the probability of it being observed at any pre-designated spot is zero. In this example, all the elements of the set of elementary events have numerical probability assignment zero. This is where the field of events <span class="math inline">\(\mathfrak{F}\)</span> is useful in providing sets with non-zero probability in which the position of the electron may be observed.</p>
 </section>
-<section id="conclusion" class="level1">
-<h1>Conclusion</h1>
+<section id="conclusion" class="level2" data-number="13.6">
+<h2 data-number="13.6" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">13.6</span> Conclusion</h2>
 <p>The subjectivity enters through interpreting <span class="math inline">\(P\)</span> as credence or degree of belief. In applications with objective probability, <span class="math inline">\(P(A)\)</span> is a numerical assignment of the strength of the single-chance tendency for an elementary event to appear in set <span class="math inline">\(A\)</span>. In objective probability <span class="math inline">\(P\)</span> is <strong>ontological</strong>, but in subjective probability it is <strong>epistemic</strong>.</p>
 
 
-
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
 <div id="ref-kolmogorov2018" class="csl-entry" role="listitem">
 Kolmogorov, Andrey Nikolaevich. 2018. <em>Foundations of the Theory of Probability</em>. Dover Publications.
 </div>
 <div id="ref-suarez2021" class="csl-entry" role="listitem">
 Suárez, Mauricio. 2021. <em>Philosophy of Probability and Statistical Modelling</em>. Cambridge University Press.
 </div>
-</div></section></div></main> <!-- /main -->
+</div>
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -385,7 +645,7 @@ Suárez, Mauricio. 2021. <em>Philosophy of Probability and Statistical Modelling
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/github\.com\/Crit-Ont\/ontological-investigations\.git");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -712,6 +972,18 @@ Suárez, Mauricio. 2021. <em>Philosophy of Probability and Statistical Modelling
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Potentiality_and_probability.html" class="pagination-link" aria-label="Potentiality and Probability">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Potentiality and Probability</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./Conditional-probability-Renyi-versus-Kolmogorov.html" class="pagination-link" aria-label="Conditional probability: Renyi versus Kolmogorov">
+        <span class="nav-page-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Conditional probability: Renyi versus Kolmogorov</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
